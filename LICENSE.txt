@@ -1,0 +1,6 @@
+LICENSE
+=======
+
+Copyright © MLDEG
+
+Any usage of the Software must be in line with the Minecraft End User Licence Agreement that you can find at the following adress : https://www.minecraft.net/en-us/eula

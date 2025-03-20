@@ -1,0 +1,43 @@
+#.
+#Modify Create Qol blocks comportements
+[kinetics]
+	#.
+	#Define if the shadow radiance helmet has goggles
+	helmetHaveGoggles = true
+	#.
+	#Define if players can add propellers to their shadow radiance chestplate
+	propellersAllowed = true
+	#.
+	#Define if players can activate the hover mode with their shadow radiance chestplate
+	hoverAllowed = true
+	#.
+	#Define if the shadow radiance armor pieces give potion effects
+	armorEffectsEnable = true
+	#.
+	#Define if the diving effect is applied on the shadow radiance boots
+	#Diving makes players descend quicker in liquids 
+	bootsDiving = true
+	#.
+	#Define if players can walk normally under lava with shadow radiance boots 
+	#Diving makes players descend quicker in liquids 
+	bootsLavaWalking = true
+
+		#.
+		#.
+		#Fine tune the kinetic stats of individual components
+		[kinetics.stressValues.v2]
+
+			#.
+			#.
+			#[in Stress Units]
+			#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+			[kinetics.stressValues.v2.impact]
+				mason_saw = 4.0
+				loom_saw = 4.0
+				shadow_radiance_chestplate = 4.0
+				inventory_linker = 8.0
+				alchemy_saw = 4.0
+				tinkering_saw = 4.0
+				botanist_saw = 4.0
+				glassblower_saw = 4.0
+				carpenters_saw = 4.0

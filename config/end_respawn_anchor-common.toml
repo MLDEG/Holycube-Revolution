@@ -1,0 +1,6 @@
+["Config for EndRespawnAnchor Mod"]
+	#This defines whether it explodes or not in dimensions other than the End.
+	isExplode = true
+	#This defines whether respawn position should be changed in particular situation. 
+	# See description for more details.
+	shouldChangeSpawnInfo = true

@@ -1,0 +1,68 @@
+name: Bug report
+description: There is a bug that needs to be fixed.
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: Before submitting an issue, check if your issue has been submitted before. If it has, please don't submit a duplicate.
+  - type: input
+    id: modpack-version
+    attributes:
+      label: Modpack version
+      description: If you are not using the latest version, make sure to update it before submitting your issue.
+      placeholder: "Example: 1.X.X"
+    validations:
+      required: true
+  - type: textarea
+    id: whats-your-issue
+    attributes:
+      label: Description
+      description: >-
+        Please be as specific as possible about the bug you are experiencing!
+    validations:
+      required: true
+  - type: textarea
+    id: crash-log
+    attributes:
+      label: Crashlogs
+      description: >-
+        If you have a crash logs, please post it here.
+        please use https://pste.ch, or https://hastebin.com
+      placeholder: >-
+        My crash logs! 
+        https://pste.ch, 
+        https://hastebin.com
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+      description: >-
+        Please provide as much information as you can in how you can get this
+        bug to happen again, if this bug can only be caused once, consider that
+        it may be a one off issue and might not need reporting. If we can not
+        reproduce an issue, I will be unable to fix the bug, so as much
+        information here will help me solve your issue.
+      placeholder: 1. I do this then
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What should happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: anything-else
+    attributes:
+      label: Anything else to note?
+      description: >-
+        If there is any extra information you'd like to add, this is the place
+        to do so.
+  - type: markdown
+    attributes:
+      value: >-
+        Not providing enough information will result in your issue being closed
+        with a request to add more information.

@@ -15,7 +15,21 @@ ServerEvents.recipes(e => {
         'createcasing:crafting/gearbox/creative_from_conversion',
         'createcasing:item_application/creative_casing',
         'minecraft:lodestone',
-        'minecraft:cake'
+        'minecraft:cake',
+        'sophisticatedbackpacks:inception_upgrade',
+        'create_mechanical_extruder:extruding/scoria',
+        'create_mechanical_extruder:extruding/andesite',
+        'create_mechanical_extruder:extruding/netherack',
+        'create_mechanical_extruder:extruding/ochrum',
+        'create_mechanical_extruder:extruding/obsidian',
+        'create_mechanical_extruder:extruding/snow_block',
+        'create_mechanical_extruder:extruding/sandstone',
+        'create_mechanical_extruder:extruding/diorite',
+        'create_mechanical_extruder:extruding/advanced_obsidian',
+        'create_mechanical_extruder:extruding/asurine',
+        'create_mechanical_extruder:extruding/deepslate',
+        'create_mechanical_extruder:extruding/granite',
+        'create_mechanical_extruder:extruding/crimsite',
     ]
     removeId.forEach(C => { r(C) })
 

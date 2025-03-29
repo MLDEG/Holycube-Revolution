@@ -11,11 +11,11 @@ ServerEvents.recipes(e => {
         "processing_time": 350,
         "results": [
             {
-                "count": 1,
+                "count": 3,
                 "id": "create:polished_rose_quartz"
             },
             {
-                "chance": 0.50,
+                "chance": 0.75,
                 "id": "create:experience_nugget"
             }
         ]

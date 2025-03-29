@@ -1,0 +1,12 @@
+#General settings
+[General]
+	#Show the Armor Stand configuration GUI on shift right click
+	enableConfigGui = true
+	#Allow Armor Stand to be renamed using name tags
+	enableNameTags = true
+	#Allow scrolling to increase / decrease an angle value in the posing screen
+	allowScrolling = true
+	#Restrict the ability to resize the Armor Stand to server operators
+	restrictResizeToOP = false
+	#List of players that are allowed to resize the Armor Stand when restrictResizeToOP is enabled
+	resizeWhitelist = []

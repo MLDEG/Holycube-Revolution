@@ -1,8 +1,11 @@
 /.vscode/
+/.mixin.out/
+/.replay_cache/
 /backups/
 /config/jei/world/
 /crash-reports/
 /downloads/
+/fancymenu_data/
 /journeymap/
 /kubejs/exported/
 /kubejs/README.txt
@@ -13,11 +16,13 @@
 /moddata/
 /mods/
 /patchouli_books/
+/replay_recordings/
 /resourcepacks/
 /saves/
-/schematics/uploaded/
+/schematics/
 /screenshots/
 /shaderpacks/
+/simplebackups/
 /.curseclient
 /command_history.txt
 /minecraftinstance.json

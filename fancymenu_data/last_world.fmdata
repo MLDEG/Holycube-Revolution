@@ -1,7 +1,0 @@
-type = last_world
-
-last_world {
-  is_server = false
-  world = C:/Users/mldeg/curseforge/minecraft/Instances/Holycube Revolution/saves/New World
-}
-

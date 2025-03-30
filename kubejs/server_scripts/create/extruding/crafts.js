@@ -19,7 +19,6 @@ ServerEvents.recipes(e => {
             "id": "minecraft:calcite"
         }
     })
-
     //Dripstone
     e.custom({
         "type": "create_mechanical_extruder:extruding",
@@ -37,6 +36,28 @@ ServerEvents.recipes(e => {
         },
         "result": {
             "id": "minecraft:dripstone_block"
+        }
+    })
+    //Deepslate
+    e.custom({
+        "type": "create_mechanical_extruder:extruding",
+        "blockIngredients": {
+            "first": {
+                "blocks": "minecraft:water"
+            },
+            "second": {
+                "blocks": "minecraft:lava"
+            }
+        },
+        "catalyst": {
+            "blocks": "minecraft:bedrock"
+        },
+        "consumeBlocks": {
+            "first": false,
+            "second": false
+        },
+        "result": {
+            "id": "minecraft:cobbled_deepslate"
         }
     })
 

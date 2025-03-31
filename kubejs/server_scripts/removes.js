@@ -30,6 +30,8 @@ ServerEvents.recipes(e => {
         'create_mechanical_extruder:extruding/deepslate',
         'create_mechanical_extruder:extruding/granite',
         'create_mechanical_extruder:extruding/crimsite',
+        'create_extra_casing:crafting/rgb_casing',
+        'create_extra_casing:mixing/rgb_casing'
     ]
     removeId.forEach(C => { r(C) })
 

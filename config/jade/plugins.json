@@ -52,6 +52,9 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "create_mechanical_chicken": {
+    "data": true
+  },
   "jadeaddons": {
     "equipment_requirement": ""
   },

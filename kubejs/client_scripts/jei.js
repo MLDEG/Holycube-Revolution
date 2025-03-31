@@ -14,5 +14,6 @@ RecipeViewerEvents.removeEntries('item', (e) => {
         'sophisticatedbackpacks:stack_upgrade_omega_tier',
         'sophisticatedbackpacks:stack_upgrade_tier_4',
         'sophisticatedbackpacks:inception_upgrade',
+        'create_extra_casing:rgb_casing'
     ])
 });

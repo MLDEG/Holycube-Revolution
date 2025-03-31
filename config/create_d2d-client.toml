@@ -1,0 +1,37 @@
+#.
+#Configs for the Client
+[client]
+
+	#.
+	#Configure your vision range when submerged in Create Dream n' Desire's custom fluids
+	[client.fluidFogSettings]
+		#.
+		#The vision range through Sap will be multiplied by this factor
+		# Default: 0.125
+		# Range: 0.125 ~ 128.0
+		sap = 0.125
+		#.
+		#The vision range through Chocolate Milkshake will be multiplied by this factor
+		# Default: 0.125
+		# Range: 0.125 ~ 128.0
+		chocolateTransparencyMultiplier = 0.125
+		#.
+		#The vision range through Vanilla Milkshake will be multiplied by this factor
+		# Default: 0.125
+		# Range: 0.125 ~ 128.0
+		vanillaTransparencyMultiplier = 0.125
+		#.
+		#The vision range through Glowberry Milkshake will be multiplied by this factor
+		# Default: 0.125
+		# Range: 0.125 ~ 128.0
+		glowberryTransparencyMultiplier = 0.125
+		#.
+		#The vision range through Strawberry Milkshake will be multiplied by this factor
+		# Default: 0.125
+		# Range: 0.125 ~ 128.0
+		strawberryTransparencyMultiplier = 0.125
+		#.
+		#The vision range through Pumpkin Milkshake will be multiplied by this factor
+		# Default: 0.125
+		# Range: 0.125 ~ 128.0
+		pumpkinTransparencyMultiplier = 0.125

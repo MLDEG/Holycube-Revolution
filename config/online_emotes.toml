@@ -1,0 +1,12 @@
+[global]
+	# Default: 15
+	# Range: 0 ~ 9223372036854775807
+	reconnectionDelay = 15
+	replaceMessages = false
+	debug = false
+
+[netty]
+	useEpoll = false
+	# Default: 256
+	# Range: > 256
+	compressionThreshold = 256

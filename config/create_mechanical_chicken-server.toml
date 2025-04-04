@@ -1,0 +1,43 @@
+	#.
+	#Mechanical Chicken Configs
+	[mechanical_chicken.v1]
+		#.
+		#.
+		#Processing time (in ticks).
+		# Default: 500
+		# Range: > 0
+		processingTime = 500
+		#.
+		#Output amount.
+		# Default: 1
+		# Range: > 1
+		outputAmount = 1
+		#.
+		#Fluid capacity.
+		# Default: 1000
+		# Range: > -2147483648
+		fluidCapacity = 1000
+		#.
+		#Required fluid amount.
+		# Default: 100
+		# Range: > -2147483648
+		requiredFluidAmount = 100
+		#.
+		#Required fluid.
+		requiredFluid = "create_mechanical_chicken:chicken_nutrient"
+		#.
+		#Sound volume.
+		# Default: 0.5
+		# Range: 0.0 ~ 1.0
+		soundVolume = 0.5
+
+			#.
+			#Stress values
+			[mechanical_chicken.v1.stressValues.v1]
+
+				#.
+				#.
+				#[in Stress Units]
+				#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+				[mechanical_chicken.v1.stressValues.v1.impact]
+					mechanical_chicken = 4.0

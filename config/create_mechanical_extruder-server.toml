@@ -1,0 +1,21 @@
+	#.
+	#Mechanical Extruder Configs
+	[mechanical_extruder.v1]
+		#.
+		#.
+		#Duration of the extrudding cycle, in ticks.
+		# Default: 200
+		# Range: > -2147483648
+		cycleTime = 200
+
+			#.
+			#Stress values
+			[mechanical_extruder.v1.stressValues.v1]
+
+				#.
+				#.
+				#[in Stress Units]
+				#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+				[mechanical_extruder.v1.stressValues.v1.impact]
+					mechanical_extruder = 4.0
+					mechanical_brass_extruder = 16.0

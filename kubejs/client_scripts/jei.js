@@ -1,11 +1,45 @@
-RecipeViewerEvents.removeEntries("item", (e) => {
-    e.remove("createcasing:chorium_ingot");
-    e.remove("createcasing:creative_casing");
-    e.remove("createcasing:creative_gearbox");
-    e.remove("createcasing:vertical_creative_gearbox");
-    e.remove("createcasing:creative_mixer");
-    e.remove("createcasing:creative_press");
-    e.remove("createcasing:creative_depot");
-    e.remove("createcasing:creative_encased_chain_drive");
-    e.remove("createcasing:creative_adjustable_chain_gearshift");
+RecipeViewerEvents.removeEntries('item', (e) => {
+    e.remove([
+        'createcasing:chorium_ingot',
+        'createcasing:creative_casing',
+        'createcasing:creative_gearbox',
+        'createcasing:vertical_creative_gearbox',
+        'createcasing:creative_mixer',
+        'createcasing:creative_press',
+        'createcasing:creative_depot',
+        'createcasing:creative_encased_chain_drive',
+        'createcasing:creative_adjustable_chain_gearshift',
+        'createcasing:creative_configurable_gearbox',
+        'sophisticatedbackpacks:survival_infinity_upgrade',
+        'sophisticatedbackpacks:infinity_upgrade',
+        'sophisticatedbackpacks:stack_upgrade_omega_tier',
+        'sophisticatedbackpacks:stack_upgrade_tier_4',
+        'sophisticatedbackpacks:inception_upgrade',
+        'create_extra_casing:rgb_casing',
+        'create_d2d:burner',
+        'create_d2d:gatling_breaker',
+        'create_d2d:coal_piece',
+        'create_d2d:diamond_shard',
+        'create_d2d:lapis_lazuli_shard',
+        'create_d2d:hydraulic_press',
+        'create_d2d:blasting_sail',
+        'create_d2d:smoking_sail',
+        'create_d2d:haunting_sail',
+        'create_d2d:splashing_sail',
+        'create_d2d:stirling_engine',
+        'create_d2d:sap_bucket',
+        'create_d2d:pumpkin_milkshake_bucket',
+        'create_d2d:glowberry_milkshake_bucket',
+        'create_d2d:strawberry_milkshake_bucket',
+        'create_d2d:vanilla_milkshake_bucket',
+        'create_d2d:chocolate_milkshake_bucket'
+    ])
+});
+RecipeViewerEvents.removeEntries('fluid', (e) => {
+    e.remove('create_d2d:sap',)
+    e.remove('create_d2d:pumpkin_milkshake')
+    e.remove('create_d2d:glowberry_milkshake')
+    e.remove('create_d2d:strawberry_milkshake')
+    e.remove('create_d2d:vanilla_milkshake')
+    e.remove('create_d2d:chocolate_milkshake')
 });

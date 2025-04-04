@@ -4979,5 +4979,743 @@
       "frequency": 0.0,
       "movement": "TRAILING_FULL"
     }
-  }
+  },
+  "adventure_hat": {
+    "name": "adventure_hat",
+    "rarity": "COMMON",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 16777215
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:heart",
+      "frequency": 0.0,
+      "movement": "TRAILING_FULL"
+    }
+  
+  },
+  "alex_terrible_mask_ml": {
+    "name": "alex_terrible_mask_ml",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 16711680
+    },
+    "Particle Settings": {
+      "enabled": true,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD"
+    
+    }
+  
+  },
+
+  "casquete_helice_ariux": {
+    "name": "casquete_helice_ariux",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": false,
+      "decimal color": 16711680
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD"
+    
+    }
+  
+  },
+
+  "flower_hat2": { 
+    "name": "flower_hat2",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 16711680
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD"
+    
+    }
+  
+  },
+
+
+  
+  "chef_hat": { 
+    "name": "chef_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 16777215
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD"
+    
+    }
+  
+  },
+
+
+    "stormtrooper_helmet": { 
+    "name": "stormtrooper_helmet",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": false,
+      "decimal color": 16711680
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD"
+    
+    }
+  
+  },
+
+
+    "drakvador_helmet": { 
+    "name": "drakvador_helmet",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": false,
+      "decimal color": 16711680
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }
+  
+  },
+
+
+    "zero_helmet": { 
+    "name": "zero_helmet",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": false,
+      "decimal color": 16711680
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    }
+  
+  },
+
+    "stonks_hat": { 
+    "name": "stonks_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": false,
+      "decimal color": 16711680
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }
+  
+  },
+
+
+    "feather_hat": { 
+    "name": "feather_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": false,
+      "decimal color": 16711680
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }
+  
+  },
+
+    "cape_mage": { 
+    "name": "cape_mage",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 8990942 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }
+  
+  },
+
+
+    "aquarium_hat": { 
+    "name": "aquarium_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 10485760 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }
+  
+  },
+
+
+    "crown_hc": { 
+    "name": "crown_hc",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 10485760 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }
+  
+  },
+
+
+    "double_rubon": { 
+    "name": "double_rubon",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 16711807 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }
+  
+  },
+
+
+    "duck_hat": { 
+    "name": "duck_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 14792769 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }
+  
+  },
+
+
+    "fancy_hat": { 
+    "name": "fancy_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 9109504 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }
+  
+  },
+
+
+    "flower_h": { 
+    "name": "flower_h",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 9188251 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }
+  
+  },
+
+    "flower_head_h": { 
+    "name": "flower_head_h",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 9188251 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    } },
+
+
+    "frog_bob": { 
+    "name": "frog_bob",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 8635422 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    } },
+
+
+    "goat_horn": { 
+    "name": "goat_horn",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 16106128 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    } },
+
+
+    "greek_crown": { 
+    "name": "greek_crown",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 16766720 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    } },
+
+
+    "horns_hc": { 
+    "name": "horns_hc",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 16106128 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    } },
+
+
+    "miner_hat": { 
+    "name": "miner_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 16766720 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    } },
+
+
+    "pharaon_hat": { 
+    "name": "pharaon_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 8595377 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    } },
+
+
+    "poulpy": { 
+    "name": "poulpy",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 3668468 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "rubon_2": { 
+    "name": "rubon_2",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 3668468 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "snail_eyes": { 
+    "name": "snail_eyes",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 6155594 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "tv_hat": { 
+    "name": "tv_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 16711680 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "bear_hat": { 
+    "name": "bear_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 9460018 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "beret": { 
+    "name": "beret",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 15010108 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "capitaine_hat": { 
+    "name": "capitaine_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 16777215 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "cart_hat": { 
+    "name": "cart_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": false,
+      "decimal color": 16777215 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "sombreros_tint": { 
+    "name": "sombreros_tint",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 13636114 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "lawyer_hat": { 
+    "name": "lawyer_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 13636114 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "farmer_hat": { 
+    "name": "farmer_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 15821263 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "deer_horn": { 
+    "name": "deer_horn",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 15910516 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "deer_horn_leaves": { 
+    "name": "deer_horn_leaves",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 15910516 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }}
+
+
+
+
+
+
+  
+  
+
+
+  
 }

@@ -52,8 +52,21 @@
     "painting": true,
     "chiseled_bookshelf": true
   },
+  "create_mechanical_chicken": {
+    "data": true
+  },
   "jadeaddons": {
     "equipment_requirement": ""
+  },
+  "jadeaddons.create": {
+    "filter": true,
+    "backtank_capacity": true,
+    "goggles.requires_goggles": true,
+    "goggles": false,
+    "blaze_burner": true,
+    "exact_block": true,
+    "goggles.detailed": false,
+    "placard": true
   },
   "jade_access": {
     "held_item": true,
@@ -61,6 +74,9 @@
     "block": true,
     "entity": true,
     "entity_variant": true
+  },
+  "jadeaddons.lootr": {
+    "info": true
   },
   "supplementaries": {
     "hat_stand": true
@@ -78,9 +94,6 @@
   },
   "waystones": {
     "waystone": true
-  },
-  "lootr": {
-    "info": true
   },
   "camera": {
     "image_frame": true

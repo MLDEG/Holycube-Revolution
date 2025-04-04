@@ -1,0 +1,52 @@
+#.
+#Configs for the World
+[server]
+	#.
+	#Chance for and Ore Stone to spawn when on top of Bedrock while Milkshake Stone Generating
+	# Default: 25
+	# Range: 1 ~ 100
+	chanceForOreStone = 25
+	#.
+	#Chance for and Ore Stone to spawn when on top of Artificial Bedrock while Milkshake Stone Generating
+	# Default: 5
+	# Range: 0 ~ 100
+	chanceForArtificialOreStone = 5
+
+#.
+#Parameters and abilities of Create: Desires 2 Dream's kinetic mechanisms
+[kinetics]
+
+	#.
+	#.
+	#Fine tune the kinetic stats of individual components
+	[kinetics.stressValues]
+
+		#.
+		#.
+		#[in Stress Units]
+		#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+		[kinetics.stressValues.impact]
+			light_blue_propeller = 0.0
+			light_gray_propeller = 0.0
+			gray_propeller = 0.0
+			black_propeller = 0.0
+			white_propeller = 0.0
+			hydraulic_press = 16.0
+			propeller = 0.0
+			magenta_propeller = 0.0
+			pink_propeller = 0.0
+			lime_propeller = 0.0
+			cyan_propeller = 0.0
+			yellow_propeller = 0.0
+			green_propeller = 0.0
+			red_propeller = 0.0
+			brown_propeller = 0.0
+			orange_propeller = 0.0
+			blue_propeller = 0.0
+			purple_propeller = 0.0
+
+		#.
+		#[in Stress Units]
+		#Configure how much stress a source can accommodate for.
+		[kinetics.stressValues.capacity]
+			stirling_engine = 1024.0

@@ -60,6 +60,8 @@
 			enable = true
 			#Redstone inputs forces paused playback and ignores any other control sources
 			masterMode = false
+			#Experimental playlist mode, this will make the display to play a list of videos
+			experimentalPlaylistMode = false
 
 	#Configuration related to remote control
 	[waterframes.remote_control]

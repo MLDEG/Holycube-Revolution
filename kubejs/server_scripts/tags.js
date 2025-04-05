@@ -6,8 +6,5 @@ ServerEvents.tags('item', e => {
 })
 //BLOCK TAGS
 ServerEvents.tags('block', e => {
-
     e.add('minecraft:beacon_base_blocks', ['kubejs:polished_rose_quartz_block'])
-
-
 })

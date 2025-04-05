@@ -3,7 +3,9 @@
 /.replay_cache/
 /backups/
 /config/jei/world/
+/config/forgematica/
 /crash-reports/
+/debug/
 /downloads/
 /fancymenu_data/
 /journeymap/
@@ -31,6 +33,7 @@
 /servers.dat
 /servers.dat_old
 /realms_persistence.json
+/Todo.txt
 /user-prefs.json
 /usercache.json
 /usernamecache.json

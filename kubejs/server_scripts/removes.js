@@ -49,7 +49,9 @@ ServerEvents.recipes(e => {
         'create_d2d:crafting/fan_catalyst/haunting_sail',
         'create_d2d:crafting/fan_catalyst/smoking_sail',
         'create_d2d:crafting/fan_catalyst/blasting_sail',
-        'createcasing:crafting/configurable_gearbox/creative'
+        'createcasing:crafting/configurable_gearbox/creative',
+        'framedblocks:phantom_paste_from_phantom_membrane',
+        'framedblocks:phantom_paste_from_chorus_fruit'
     ]
     removeId.forEach(C => { r(C) })
 })

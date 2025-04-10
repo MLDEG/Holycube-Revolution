@@ -32,7 +32,8 @@ RecipeViewerEvents.removeEntries('item', (e) => {
         'create_d2d:glowberry_milkshake_bucket',
         'create_d2d:strawberry_milkshake_bucket',
         'create_d2d:vanilla_milkshake_bucket',
-        'create_d2d:chocolate_milkshake_bucket'
+        'create_d2d:chocolate_milkshake_bucket',
+        'framedblocks:phantom_paste'
     ])
 });
 RecipeViewerEvents.removeEntries('fluid', (e) => {

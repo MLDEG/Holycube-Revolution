@@ -19,4 +19,19 @@ ServerEvents.recipes(e => {
 
     var dye = ['red', 'orange', 'yellow', 'lime', 'green', 'cyan', 'light_blue', 'blue', 'purple', 'magenta', 'pink', 'white', 'light_gray', 'gray', 'black', 'brown']
     dye.forEach(D => { dyeCrafts(D) })
+
+    function wildPlants(input, output) {
+        e.custom({ "type": "create:mixing", "ingredients": [{ "item": "minecraft:short_grass" }, { "item": input }, { "item": input }, { "item": input }, { "item": input }, { "item": input }], "results": [{ "id": output }] })
+    }
+    wildPlants('minecraft:potato', 'farmersdelight:wild_potatoes')
+    wildPlants('farmersdelight:cabbage', 'farmersdelight:wild_cabbages')
+    wildPlants('farmersdelight:onion', 'farmersdelight:wild_onions')
+    wildPlants('minecraft:carrot', 'farmersdelight:wild_carrots')
+    wildPlants('expandeddelight:chili_pepper', 'expandeddelight:wild_chili_pepper')
+    wildPlants('expandeddelight:sweet_potato', 'expandeddelight:wild_sweet_potato')
+    wildPlants('expandeddelight:asparagus', 'expandeddelight:wild_asparagus')
+    wildPlants('farmersdelight:rice', 'farmersdelight:wild_rice')
+    wildPlants('supplementaries:flax', 'supplementaries:wild_flax')
+    wildPlants('expandeddelight:peanut', 'expandeddelight:wild_peanuts')
+    wildPlants('minecraft:beetroot', 'farmersdelight:wild_beetroots')
 })

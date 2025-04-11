@@ -14,7 +14,8 @@ ServerEvents.recipes(e => {
 
     function dyeCrafts(dye) {
         e.custom({ "type": "create:mixing", "ingredients": [{ "item": "minecraft:" + dye + "_dye" }, { "type": "fluid_tag", "amount": 250, "fluid_tag": "c:water" }], "results": [{ "amount": 250, "id": "kubejs:" + dye }] })
-        e.custom({ "type": "create:mixing", "ingredients": [{ "item": "minecraft:gravel" }, { "item": "minecraft:sand" }, { "type": "fluid_stack", "amount": 50, "fluid": "kubejs:" + dye }], "results": [{ "count": 2, "id": "minecraft:" + dye + "_concrete_powder" }] })
+        e.custom({ "type": "create:mixing", "ingredients": [{ "item": "minecraft:gravel" }, { "item": "minecraft:sand" }, { "type": "fluid_stack", "amount": 50, "fluid": "kubejs:" + dye }], "results": [{ "count": 2, "id": "minecraft:" + dye + "_concrete" }] })
+        e.custom({ "type": "create:crushing", "ingredients": [{ "item": "minecraft:" + dye + "_concrete" }], "processing_time": 20, "results": [{ "id": "minecraft:" + dye + "_concrete_powder" }] })
     }
 
     var dye = ['red', 'orange', 'yellow', 'lime', 'green', 'cyan', 'light_blue', 'blue', 'purple', 'magenta', 'pink', 'white', 'light_gray', 'gray', 'black', 'brown']

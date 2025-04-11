@@ -9,4 +9,11 @@ ServerEvents.recipes(e => {
     }
     var dye = ['red', 'orange', 'yellow', 'lime', 'green', 'cyan', 'light_blue', 'blue', 'purple', 'magenta', 'pink', 'white', 'light_gray', 'gray', 'black', 'brown']
     dye.forEach(D => { dyeCrafts(D) })
+
+    //Crying Obsidian
+    e.custom({ "type": "create:filling", "ingredients": [{ "item": "minecraft:obsidian" }, { "type": "fluid_stack", "amount": 50, "fluid": "kubejs:purple" }], "results": [{ "id": "minecraft:crying_obsidian" }] })
+
+    //Bee Nest Block
+    e.custom({ "type": "create:filling", "ingredients": [{ "tag": "minecraft:planks" }, { "type": "fluid_stack", "amount": 50, "fluid": "create:honey" }], "results": [{ "id": "kubejs:bee_nest_block" }] })
+
 })

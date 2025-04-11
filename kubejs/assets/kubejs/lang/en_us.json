@@ -1,4 +1,5 @@
 {
     "fluid_type.create_things_and_misc.diluted_bonemeal": "Diluted Bonemeal",
-    "fluid_type.create_things_and_misc.slime": "Slime"
+    "fluid_type.create_things_and_misc.slime": "Slime",
+    "create.recipe.aquatic_ambitions.fan_channeling.fan": "Fan behind an active conduit"
 }

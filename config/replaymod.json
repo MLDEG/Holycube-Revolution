@@ -17,10 +17,10 @@
     ]
   },
   "recording": {
-    "recordSingleplayer": false,
-    "recordServer": false,
+    "recordSingleplayer": true,
+    "recordServer": true,
     "indicator": true,
-    "autoStartRecording": true,
+    "autoStartRecording": false,
     "autoPostProcess": true,
     "renameDialog": true
   },

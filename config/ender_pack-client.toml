@@ -1,0 +1,5 @@
+# setting to false disables rendering from chestplate slot
+renders_in_armor_slot = true
+
+# setting to false disables rendering from curios/trinkets slot
+renders_in_extra_slot = true

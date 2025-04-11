@@ -5,6 +5,7 @@
     "firework_rocket",
     "interaction",
     "text_display",
-    "lightning_bolt"
+    "lightning_bolt",
+    "player"
   ]
 }

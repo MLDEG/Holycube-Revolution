@@ -1,4 +1,8 @@
 {
+  "framedblocks": {
+    "framed_item_frame": true,
+    "framed_block_generic": true
+  },
   "minecraft": {
     "item_storage.show_name_amount": 5,
     "furnace": true,
@@ -55,9 +59,6 @@
   "create_mechanical_chicken": {
     "data": true
   },
-  "jadeaddons": {
-    "equipment_requirement": ""
-  },
   "jadeaddons.create": {
     "filter": true,
     "backtank_capacity": true,
@@ -75,12 +76,6 @@
     "entity": true,
     "entity_variant": true
   },
-  "jadeaddons.lootr": {
-    "info": true
-  },
-  "supplementaries": {
-    "hat_stand": true
-  },
   "jade": {
     "coordinates.rel": false,
     "registry_name.special": false,
@@ -92,6 +87,18 @@
     "block_properties": false,
     "mod_name": true
   },
+  "balm": {
+    "jade": true
+  },
+  "jadeaddons": {
+    "equipment_requirement": ""
+  },
+  "jadeaddons.lootr": {
+    "info": true
+  },
+  "supplementaries": {
+    "hat_stand": true
+  },
   "waystones": {
     "waystone": true
   },
@@ -100,8 +107,5 @@
   },
   "corpse": {
     "corpse": true
-  },
-  "balm": {
-    "jade": true
   }
 }

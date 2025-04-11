@@ -172,6 +172,8 @@
 	# Default: 0.0
 	# Range: -10.0 ~ 10.0
 	test3 = 0.0
+	#unfunny
+	"I am very boring" = false
 
 #Game tweaks
 [tweaks]

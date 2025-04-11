@@ -1,0 +1,24 @@
+#If true, it will have durability when used.
+enable_trowel_durability = false
+#If true, the trowel will use the inventory blocks as well as hotbar blocks, if false it will only use hotbar blocks.
+enable_inventory_blocks = false
+#If true, the trowel will highlight the block that will be placed.
+enable_trowel_highlight = false
+#The red value of the highlight color (0.0 - 1.0).
+# Default: 1.0
+# Range: 0.0 ~ 1.0
+trowel_highlight_red = 1.0
+#The green value of the highlight color (0.0 - 1.0).
+# Default: 0.0
+# Range: 0.0 ~ 1.0
+trowel_highlight_green = 0.0
+#The blue value of the highlight color (0.0 - 1.0).
+# Default: 1.0
+# Range: 0.0 ~ 1.0
+trowel_highlight_blue = 1.0
+#The alpha value of the highlight color (0.0 - 1.0).
+# Default: 0.4000000059604645
+# Range: 0.0 ~ 1.0
+trowel_highlight_alpha = 0.4000000059604645
+#The blacklist of blocks that can't be placed with the trowel.
+trowel_blacklist = ["#minecraft:saplings", "#minecraft:buttons", "#minecraft:pressure_plates", "minecraft:chain", "#minecraft:doors", "#minecraft:candles", "#minecraft:banners", "minecraft:snow", "minecraft:moss_carpet", "minecraft:pointed_dripstone", "#c:mushrooms", "#minecraft:flowers", "minecraft:torch", "minecraft:ladder", "minecraft:lever", "minecraft:redstone_torch", "minecraft:redstone", "minecraft:tripwire_hook", "minecraft:tripwire", "minecraft:repeater", "minecraft:comparator", "minecraft:observer", "minecraft:daylight_detector", "minecraft:daylight_detector_inverted"]

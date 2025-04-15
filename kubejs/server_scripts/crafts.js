@@ -40,5 +40,11 @@ ServerEvents.recipes(e => {
     e.shaped('3x minecraft:pale_moss_carpet', ['AA '], {
         A: 'minecraft:pale_moss_block'
     })
-
+    
+    // dough recipe change
+    e.replaceInput(
+        { input: 'create:dough' },
+        'create:dough',
+        '#c:dough'
+    )
 })

@@ -59,7 +59,27 @@ ServerEvents.recipes(e => {
         'create_aquatic_ambitions:crafting/brain_coral_block',
         'create_aquatic_ambitions:crafting/tube_coral_block',
         'create_aquatic_ambitions:crafting/trident',
-        'supplementaries:item_shelf'
+        'supplementaries:item_shelf',
+        /create_dragons_plus:mixing/,
+        'create_enchantment_industry:printing/printing/custom_name',
+        'create_sa:netherite_jetpack_recipe',
+        'create_sa:copper_propeler_recipe',
+        'create_sa:andesite_jetpack_recipe',
+        'create_sa:brass_jetpack_recipe',
+        /comforts:sleeping_bag/,
+        'create:crushing/gilded_blackstone',
+        'displaydelight:food_plate',
+        'additionallanterns:stone_chain',
+        'create:crafting/appliances/dough',
+        'create:smelting/bread',
+        'create:smoking/bread',
+        'create:campfire_cooking/bread',
+        'create:crafting/curiosities/cake',
+        'farmersdelight:wheat_dough_from_water',
+        'farmersdelight:wheat_dough_from_eggs',
+        'someassemblyrequired:crafting_shapeless/raw_burger_bun',
+        'create:mixing/dough_by_mixing',
+        'farmersdelight:integration/create/mixing/pie_crust_from_mixing'
     ]
     removeId.forEach(C => { r(C) })
 })

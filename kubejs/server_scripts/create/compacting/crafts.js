@@ -6,9 +6,11 @@ ServerEvents.recipes(e => {
     //Breccia
     e.custom({ "type": "create:compacting", "ingredients": [{ "item": "minecraft:granite" }, { "item": "minecraft:terracotta" }, { "type": "fluid_stack", "amount": 100, "fluid": "minecraft:lava" }], "results": [{ "id": "create_d2d:breccia" }] })
     //Gilded Blackstone
-    e.custom({ "type": "create:compacting", "ingredients": [{ "item": "minecraft:blackstone" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }], "results": [{ "id": "minecraft:gilded_blackstone" }] })
+    e.custom({ "type": "create:compacting", "ingredients": [{ "item": "minecraft:blackstone" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }], "results": [{ "id": "minecraft:gilded_blackstone" }] })
     //Lapis Lazuli
     e.custom({ "type": "create:compacting", "ingredients": [{ "item": "minecraft:amethyst_shard" }, { "item": "create:experience_nugget" }, { "item": "create:experience_nugget" }, { "item": "create:experience_nugget" }, { "item": "create:experience_nugget" }], "results": [{ "id": "minecraft:lapis_lazuli" }] })
     //Spore Blossom
     e.custom({ "type": "create:compacting", "ingredients": [{ "item": "minecraft:flowering_azalea_leaves" }], "results": [{ "id": "minecraft:spore_blossom" }] })
+    //Lilly Pad
+    e.custom({ "type": "create:compacting", "ingredients": [{ "item": "minecraft:kelp" }], "results": [{ "id": "minecraft:lily_pad" }] })
 })

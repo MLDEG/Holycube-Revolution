@@ -1,10 +1,13 @@
-// const Axis = Java.loadClass('net.minecraft.core.Direction$Axis');
+const Axis = Java.loadClass('net.minecraft.core.Direction$Axis');
 StartupEvents.registry("block", (e) => {
-    // const axis = { north: Axis.Z, south: Axis.Z, east: Axis.X, west: Axis.X, up: Axis.Y, down: Axis.Y }
+    const axis = { north: Axis.Z, south: Axis.Z, east: Axis.X, west: Axis.X, up: Axis.Y, down: Axis.Y }
     function block(id, name, hard, sound) {
         e.create(id).displayName(name).hardness(hard).soundType(sound).tagBlock('minecraft:mineable/pickaxe')
     }
-
+    function slabNstairs(id, name, hard, sound, tag) {
+        e.create(id + '_slab', "slab").displayName(name + ' Slab').hardness(hard).soundType(sound).tagBlock('minecraft:mineable/' + tag)
+        e.create(id + '_stairs', "stairs").displayName(name + ' Stairs').hardness(hard).soundType(sound).tagBlock('minecraft:mineable/' + tag)
+    }
     block('polished_rose_quartz_block', 'Polish rose Quartz Block', 5.0, 'metal')
     //Coal Block Slab
     e.create('coal_block_slab', "slab")
@@ -24,11 +27,21 @@ StartupEvents.registry("block", (e) => {
         .item(item =>
             item.burnTime(16000)
         )
+    //Industrial Iron slab and staris
+    slabNstairs('industrial_iron', 'Industrial Iron', 5.0, 'netherite_block', 'pickaxe')
+    slabNstairs('dirt', 'Dirt', 0.5, 'gravel', 'shovel')
+    slabNstairs('gravel', 'Gravel', 0.6, 'gravel', 'shovel')
+    slabNstairs('moss_block', 'Moss Block', 0.1, 'moss', 'hoe')
 
-    // //Bee Nest Block (deco)
-    // e.create('bee_nest_block').displayName('Bee Nest Block').hardness(2.0).soundType('wood').tagBlock('minecraft:mineable/axe').property(BlockProperties.AXIS).placementState(s => s.setValue(BlockProperties.AXIS, axis[s.clickedFace]))
+    //Bee Nest Block (deco)
+    e.create('bee_nest_block').displayName('Bee Nest Block').hardness(2.0).soundType('wood').tagBlock('minecraft:mineable/axe').property(BlockProperties.FACING).placementState(s => s.setValue(BlockProperties.FACING, s.clickedFace));
 
-    // //Sticks Stack
-    // e.create('sticks_stack').displayName('Sticks Stack').hardness(2.0).soundType('wood').tagBlock('minecraft:mineable/axe').property(BlockProperties.AXIS).placementState(s => s.setValue(BlockProperties.AXIS, axis[s.clickedFace]))
+    //Sticks Bundle
+    e.create('sticks_bundle').displayName('Sticks Bundle').hardness(2.0).soundType('wood').tagBlock('minecraft:mineable/axe').property(BlockProperties.AXIS).placementState(s => s.setValue(BlockProperties.AXIS, axis[s.clickedFace]))
+        .item(item =>
+            item.burnTime(900)
+        )
 
+    //Nerf Enderman Block
+    e.create('nerf_enderman').displayName('Nerf Enderman')
 })

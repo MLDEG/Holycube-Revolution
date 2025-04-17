@@ -27,11 +27,15 @@ StartupEvents.registry("block", (e) => {
         .item(item =>
             item.burnTime(16000)
         )
-    //Industrial Iron slab and staris
+    //Slab and Stairs
     slabNstairs('industrial_iron', 'Industrial Iron', 5.0, 'netherite_block', 'pickaxe')
     slabNstairs('dirt', 'Dirt', 0.5, 'gravel', 'shovel')
     slabNstairs('gravel', 'Gravel', 0.6, 'gravel', 'shovel')
+    slabNstairs('sand', 'Sand', 0.5, 'sand', 'shovel')
+    slabNstairs('red_sand', 'Red Sand', 0.5, 'sand', 'shovel')
     slabNstairs('moss_block', 'Moss Block', 0.1, 'moss', 'hoe')
+    slabNstairs('pale_moss_block', 'Pale Moss Block', 0.1, 'moss', 'hoe')
+    slabNstairs('sculk', 'Sculk', 0.2, 'sculk', 'hoe')
 
     //Bee Nest Block (deco)
     e.create('bee_nest_block').displayName('Bee Nest Block').hardness(2.0).soundType('wood').tagBlock('minecraft:mineable/axe').property(BlockProperties.FACING).placementState(s => s.setValue(BlockProperties.FACING, s.clickedFace));

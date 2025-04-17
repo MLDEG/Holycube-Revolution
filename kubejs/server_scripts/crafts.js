@@ -54,13 +54,17 @@ ServerEvents.recipes(e => {
         e.shaped('3x kubejs:' + output + '_slab', ['AAA'], { A: input })
         //stairs
         e.stonecutting('kubejs:' + output + '_stairs', input)
-        e.shaped('kubejs:' + output + '_stairs', ['A  ', 'AA ', 'AAA'], { A: input })
+        e.shaped('4x kubejs:' + output + '_stairs', ['A  ', 'AA ', 'AAA'], { A: input })
     }
 
     slabNstairs('create:industrial_iron_block', 'industrial_iron')
     slabNstairs('minecraft:gravel', 'gravel')
     slabNstairs('minecraft:moss_block', 'moss_block')
     slabNstairs('minecraft:dirt', 'dirt')
+    slabNstairs('minecraft:sand', 'sand')
+    slabNstairs('minecraft:red_sand', 'red_sand')
+    slabNstairs('minecraft:pale_moss_block', 'pale_moss_block')
+    slabNstairs('minecraft:sculk', 'sculk')
 
     //Stick Bundle
     e.shapeless('9x minecraft:stick', 'kubejs:sticks_bundle')

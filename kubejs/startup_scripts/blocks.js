@@ -1,6 +1,4 @@
-const Axis = Java.loadClass('net.minecraft.core.Direction$Axis');
 StartupEvents.registry("block", (e) => {
-    const axis = { north: Axis.Z, south: Axis.Z, east: Axis.X, west: Axis.X, up: Axis.Y, down: Axis.Y }
     function block(id, name, hard, sound) {
         e.create(id).displayName(name).hardness(hard).soundType(sound).tagBlock('minecraft:mineable/pickaxe')
     }
@@ -41,7 +39,7 @@ StartupEvents.registry("block", (e) => {
     e.create('bee_nest_block').displayName('Bee Nest Block').hardness(2.0).soundType('wood').tagBlock('minecraft:mineable/axe').property(BlockProperties.FACING).placementState(s => s.setValue(BlockProperties.FACING, s.clickedFace));
 
     //Sticks Bundle
-    e.create('sticks_bundle').displayName('Sticks Bundle').hardness(2.0).soundType('wood').tagBlock('minecraft:mineable/axe').property(BlockProperties.AXIS).placementState(s => s.setValue(BlockProperties.AXIS, axis[s.clickedFace]))
+    e.create('sticks_bundle').displayName('Sticks Bundle').hardness(2.0).soundType('wood').tagBlock('minecraft:mineable/axe').property(BlockProperties.AXIS).placementState(s => s.setValue(BlockProperties.AXIS, s.clickedFace.axis))
         .item(item =>
             item.burnTime(900)
         )

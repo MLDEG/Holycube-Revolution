@@ -1,4 +1,7 @@
 StartupEvents.registry("item", (e) => {
+    //Incomplete Dragon Egg
+    e.create('incomplete_dragon_egg').displayName('§dIncomplete Dragon Egg')
+
     // e.create('easter_egg').displayName('Easter EGG').food(food => {
     //     food
     //         .nutrition(1)

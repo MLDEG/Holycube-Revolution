@@ -1,4 +1,4 @@
 #List of slots to create or modify.
 #See documentation for syntax: https://docs.illusivesoulworks.com/curios/configuration#slot-configuration
 #
-slots = []
+slots = ["id=backtank;order=100;size=1;add_cosmetic=true;icon=kubejs:slot/backtank"]

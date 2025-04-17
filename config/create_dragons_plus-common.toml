@@ -13,3 +13,6 @@
 	#.
 	#If Blaze Upgrade Smithing Template should be enabled and generated in loot
 	blaze_upgrade_smithing_template = false
+	#.
+	#If Liquid Dragon's Breath should be enabled and craftable from Dragon's Breath item
+	liquid_dragons_breath = true

@@ -85,4 +85,28 @@ ServerEvents.recipes(e => {
     //Soul Sand Sand Paper
     e.shapeless('createsandpapers:soul_sand_paper', ['minecraft:paper', '#minecraft:soul_fire_base_blocks'])
 
+    //Warped Lamp
+    e.shaped('4x additional_lights:al_lamp_warped_planks', ['A', 'B'], {
+        A: 'minecraft:glowstone',
+        B: 'minecraft:warped_planks'
+    })
+
+    //Crimson Lamp
+    e.shaped('4x additional_lights:al_lamp_crimson_planks', ['A', 'B'], {
+        A: 'minecraft:glowstone',
+        B: 'minecraft:crimson_planks'
+    })
+
+    //Warped AlTorch
+    e.shaped('4x additional_lights:al_torch_warped_planks', ['AA', 'AA', 'B '], {
+        A: 'minecraft:torch',
+        B: 'minecraft:warped_planks'
+    })
+
+    //Crimson AlTorch
+    e.shaped('4x additional_lights:al_torch_crimson_planks', ['AA', 'AA', 'B '], {
+        A: 'minecraft:torch',
+        B: 'minecraft:crimson_planks'
+    })
+
 })

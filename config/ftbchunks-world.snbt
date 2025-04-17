@@ -73,7 +73,7 @@
 		# You can override this with FTB Ranks 'ftbchunks.max_claimed' permission
 		# Default: 500
 		# Range: -∞ ~ +∞
-		max_claimed_chunks: 10
+		max_claimed_chunks: 1000
 		
 		# Maximum time (in real-world days) where if no player in a team logs in, the team automatically loses their claims.
 		# Prevents chunks being claimed indefinitely by teams who no longer play.
@@ -101,7 +101,7 @@
 		# Default will check this setting for each team
 		# Default: "check"
 		# Valid values: "check", "deny", "allow"
-		fake_players: "check"
+		fake_players: "allow"
 		
 		# Maximum time in days to keep logs of prevented fakeplayer access to a team's claims.
 		# Default: 7
@@ -115,12 +115,12 @@
 		# DEFAULT: allow force-loading IF the team has at least one player with the 'ftbchunks.chunk_load_offline' FTB Ranks permission.
 		# Default: "default"
 		# Valid values: "default", "always", "never"
-		force_load_mode: "default"
+		force_load_mode: "always"
 		
 		# Hard limit for the number of chunks a team can force-load, regardless of how many members. Default of 0 means no hard limit.
 		# Default: 0
 		# Range: 0 ~ 2147483647
-		hard_team_force_limit: 0
+		hard_team_force_limit: 5000
 		
 		# Max force loaded chunks.
 		# You can override this with FTB Ranks 'ftbchunks.max_force_loaded' permission
@@ -133,7 +133,7 @@
 		# Default of 0 means no automatic loss of forceloading.
 		# Default: 0.0
 		# Range: 0.0 ~ 3650.0
-		max_idle_days_before_unforce: 1.0d
+		max_idle_days_before_unforce: 365.0d
 	}
 	team_prop_defaults: {
 		# Default explosion protection for claimed chunks
@@ -143,7 +143,7 @@
 		# Default mode for block breaking and placing in claimed chunks (NeoForge only)
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_block_edit: "allies"
+		def_block_edit: "public"
 		
 		# Default mode for block interaction, breaking and placing in claimed chunks (Fabric only)
 		# Default: "allies"
@@ -153,7 +153,7 @@
 		# Default mode for block interaction (right-click) in claimed chunks (NeoForge only)
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_block_interact: "allies"
+		def_block_interact: "public"
 		
 		# Default claim visibility for claimed chunks
 		# Default: "public"
@@ -163,12 +163,12 @@
 		# Default mode for left-clicking non-living entities (armor stands, item frames...) in claimed chunks
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_entity_attack: "allies"
+		def_entity_attack: "public"
 		
 		# Default mode for entity interaction in claimed chunks
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_entity_interact: "allies"
+		def_entity_interact: "public"
 		
 		# Default allow fake player IDs which are the same as real permitted players
 		# Default: true
@@ -189,7 +189,7 @@
 		# Default long-range player visibility on map
 		# Default: "allies"
 		# Valid values: "allies", "private", "public"
-		def_player_visibility: "allies"
+		def_player_visibility: "public"
 		
 		# Default PvP setting in claimed chunks
 		# Default: true

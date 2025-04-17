@@ -71,7 +71,8 @@ RecipeViewerEvents.removeEntries('item', (e) => {
         'createsandpapers:foamy_sand_paper',
         'createsandpapers:coral_sand_paper',
         'createsandpapers:soulless_sand_paper',
-        'kubejs:nerf_enderman'
+        'kubejs:nerf_enderman',
+        'kubejs:incomplete_dragon_egg'
     ])
 });
 RecipeViewerEvents.removeEntries('fluid', (e) => {

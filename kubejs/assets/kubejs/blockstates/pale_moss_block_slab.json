@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kubejs:block/pale_moss_block_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/pale_moss_block"
+    },
+    "type=top": {
+      "model": "kubejs:block/pale_moss_block_slab_top"
+    }
+  }
+}

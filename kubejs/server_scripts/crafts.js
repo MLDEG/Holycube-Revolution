@@ -58,6 +58,7 @@ ServerEvents.recipes(e => {
     }
 
     slabNstairs('create:industrial_iron_block', 'industrial_iron')
+    slabNstairs('create:weathered_iron_block', 'weathered_iron')
     slabNstairs('minecraft:gravel', 'gravel')
     slabNstairs('minecraft:moss_block', 'moss_block')
     slabNstairs('minecraft:dirt', 'dirt')
@@ -65,6 +66,23 @@ ServerEvents.recipes(e => {
     slabNstairs('minecraft:red_sand', 'red_sand')
     slabNstairs('minecraft:pale_moss_block', 'pale_moss_block')
     slabNstairs('minecraft:sculk', 'sculk')
+    slabNstairs('minecraft:glass', 'glass')
+    slabNstairs('minecraft:red_stained_glass', 'red_stained_glass')
+    slabNstairs('minecraft:orange_stained_glass', 'orange_stained_glass')
+    slabNstairs('minecraft:yellow_stained_glass', 'yellow_stained_glass')
+    slabNstairs('minecraft:lime_stained_glass', 'lime_stained_glass')
+    slabNstairs('minecraft:green_stained_glass', 'green_stained_glass')
+    slabNstairs('minecraft:blue_stained_glass', 'blue_stained_glass')
+    slabNstairs('minecraft:cyan_stained_glass', 'cyan_stained_glass')
+    slabNstairs('minecraft:light_blue_stained_glass', 'light_blue_stained_glass')
+    slabNstairs('minecraft:pink_stained_glass', 'pink_stained_glass')
+    slabNstairs('minecraft:magenta_stained_glass', 'magenta_stained_glass')
+    slabNstairs('minecraft:purple_stained_glass', 'purple_stained_glass')
+    slabNstairs('minecraft:brown_stained_glass', 'brown_stained_glass')
+    slabNstairs('minecraft:black_stained_glass', 'black_stained_glass')
+    slabNstairs('minecraft:gray_stained_glass', 'gray_stained_glass')
+    slabNstairs('minecraft:light_gray_stained_glass', 'light_gray_stained_glass')
+    slabNstairs('minecraft:white_stained_glass', 'white_stained_glass')
 
     //Stick Bundle
     e.shapeless('9x minecraft:stick', 'kubejs:sticks_bundle')

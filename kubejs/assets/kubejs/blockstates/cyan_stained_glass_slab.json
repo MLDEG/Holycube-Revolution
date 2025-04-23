@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "kubejs:block/cyan_stained_glass_slab"
+        },
+        "type=double": {
+            "model": "minecraft:block/cyan_stained_glass"
+        },
+        "type=top": {
+            "model": "kubejs:block/cyan_stained_glass_slab_top"
+        }
+    }
+}

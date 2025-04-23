@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kubejs:block/coal_block_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/coal_block"
+    },
+    "type=top": {
+      "model": "kubejs:block/coal_block_slab_top"
+    }
+  }
+}

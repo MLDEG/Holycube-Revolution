@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab_top",
+    "textures": {
+        "bottom": "minecraft:block/moss_block",
+        "side": "minecraft:block/moss_block",
+        "top": "minecraft:block/moss_block"
+    }
+}

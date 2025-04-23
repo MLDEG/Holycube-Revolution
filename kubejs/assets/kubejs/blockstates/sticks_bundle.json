@@ -1,0 +1,16 @@
+{
+	"variants": {
+		"axis=x": {
+			"model": "kubejs:block/sticks_bundle",
+			"x": 90,
+			"y": 90
+		},
+		"axis=y": {
+			"model": "kubejs:block/sticks_bundle"
+		},
+		"axis=z": {
+			"model": "kubejs:block/sticks_bundle",
+			"x": 90
+		}
+	}
+}

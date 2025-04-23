@@ -1,0 +1,18 @@
+#.
+#Enable/Disable features of Create: Dragons Plus
+#Mods depending on certain features may forcibly enable/disable them, in that case, the corresponding config will be ignored
+#[@cui:RequiresReload:both]
+[features]
+	#.
+	#.
+	#If Dye Fluids should be enabled and craftable from Dyes
+	dye_fluids = false
+	#.
+	#If Fluid Hatch should be enabled
+	fluid_hatch = true
+	#.
+	#If Blaze Upgrade Smithing Template should be enabled and generated in loot
+	blaze_upgrade_smithing_template = false
+	#.
+	#If Liquid Dragon's Breath should be enabled and craftable from Dragon's Breath item
+	liquid_dragons_breath = true

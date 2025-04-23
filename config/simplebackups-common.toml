@@ -45,3 +45,20 @@ useTickCounter = false
 [mod_compat]
 	#Should backup notifications be sent to Discord by using mc2discord? (needs to be installed)
 	mc2discord = true
+
+#WARNING Please check your configuration before using permanently.
+#The backup system will ignore these paths and files.
+[to_ignore]
+	#All directories that should be excluded from backups
+	#Format: Enter paths relative to the world directory (e.g., 'logs', 'data/cache')
+	#All files within these directories will also be excluded
+	ignored_paths = []
+	#Specific files that should be excluded from backups
+	#Format: Enter complete file paths relative to the world directory (e.g., 'level.dat_old', 'stats/player.json')
+	#Use this for individual files rather than entire directories
+	ignored_files = []
+	#Regular expression pattern to exclude matching files from backups
+	#All files with paths matching this pattern will be skipped
+	#Example: '.*\.temp$' excludes all files ending with .temp
+	#Leave empty to disable regex-based file exclusion
+	ignored_files_regex = ""

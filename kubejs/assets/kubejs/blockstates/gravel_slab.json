@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kubejs:block/gravel_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/gravel"
+    },
+    "type=top": {
+      "model": "kubejs:block/gravel_slab_top"
+    }
+  }
+}

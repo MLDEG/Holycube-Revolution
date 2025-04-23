@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab_top",
+    "textures": {
+        "bottom": "minecraft:block/tinted_glass",
+        "side": "minecraft:block/tinted_glass",
+        "top": "minecraft:block/tinted_glass"
+    }
+}

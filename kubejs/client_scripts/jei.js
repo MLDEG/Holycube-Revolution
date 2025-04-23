@@ -33,7 +33,46 @@ RecipeViewerEvents.removeEntries('item', (e) => {
         'create_d2d:strawberry_milkshake_bucket',
         'create_d2d:vanilla_milkshake_bucket',
         'create_d2d:chocolate_milkshake_bucket',
-        'framedblocks:phantom_paste'
+        'create_dragons_plus:lime_dye_bucket',
+        'create_dragons_plus:yellow_dye_bucket',
+        'create_dragons_plus:orange_dye_bucket',
+        'create_dragons_plus:red_dye_bucket',
+        'create_dragons_plus:brown_dye_bucket',
+        'create_dragons_plus:black_dye_bucket',
+        'create_dragons_plus:gray_dye_bucket',
+        'create_dragons_plus:light_gray_dye_bucket',
+        'create_dragons_plus:white_dye_bucket',
+        'create_dragons_plus:pink_dye_bucket',
+        'create_dragons_plus:magenta_dye_bucket',
+        'create_dragons_plus:purple_dye_bucket',
+        'create_dragons_plus:blue_dye_bucket',
+        'create_dragons_plus:light_blue_dye_bucket',
+        'create_dragons_plus:cyan_dye_bucket',
+        'create_dragons_plus:green_dye_bucket',
+        'create_sa:brass_jetpack_chestplate',
+        'create_sa:netherite_jetpack_chestplate',
+        'create_sa:copper_jetpack_chestplate',
+        'create_sa:andesite_jetpack_chestplate',
+        'createsandpapers:brown_sand_paper',
+        'createsandpapers:green_sand_paper',
+        'createsandpapers:orange_sand_paper',
+        'createsandpapers:windswept_sand_paper',
+        'createsandpapers:black_sand_paper',
+        'createsandpapers:quartzite_sand_paper',
+        'createsandpapers:blue_sand_paper',
+        'createsandpapers:violet_sand_paper',
+        'createsandpapers:pink_sand_paper',
+        'createsandpapers:venus_sand_paper',
+        'createsandpapers:moon_sand_paper',
+        'createsandpapers:mars_sand_paper',
+        'createsandpapers:red_arid_sand_paper',
+        'createsandpapers:arid_sand_paper',
+        'createsandpapers:white_sand_paper',
+        'createsandpapers:foamy_sand_paper',
+        'createsandpapers:coral_sand_paper',
+        'createsandpapers:soulless_sand_paper',
+        'kubejs:nerf_enderman',
+        'kubejs:incomplete_dragon_egg'
     ])
 });
 RecipeViewerEvents.removeEntries('fluid', (e) => {
@@ -43,4 +82,24 @@ RecipeViewerEvents.removeEntries('fluid', (e) => {
     e.remove('create_d2d:strawberry_milkshake')
     e.remove('create_d2d:vanilla_milkshake')
     e.remove('create_d2d:chocolate_milkshake')
+    e.remove('create_dragons_plus:lime_dye')
+    e.remove('create_dragons_plus:yellow_dye')
+    e.remove('create_dragons_plus:orange_dye')
+    e.remove('create_dragons_plus:red_dye')
+    e.remove('create_dragons_plus:brown_dye')
+    e.remove('create_dragons_plus:black_dye')
+    e.remove('create_dragons_plus:gray_dye')
+    e.remove('create_dragons_plus:light_gray_dye')
+    e.remove('create_dragons_plus:white_dye')
+    e.remove('create_dragons_plus:pink_dye')
+    e.remove('create_dragons_plus:magenta_dye')
+    e.remove('create_dragons_plus:purple_dye')
+    e.remove('create_dragons_plus:blue_dye')
+    e.remove('create_dragons_plus:light_blue_dye')
+    e.remove('create_dragons_plus:cyan_dye')
+    e.remove('create_dragons_plus:green_dye')
+});
+RecipeViewerEvents.removeCategories(e => {
+    e.remove('create_dragons_plus:coloring')
+
 });

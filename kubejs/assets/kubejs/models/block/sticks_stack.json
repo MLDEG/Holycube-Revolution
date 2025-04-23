@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_column",
-  "textures": {
-    "end": "kubejs:block/sticks_stack_top",
-    "side": "kubejs:block/sticks_stack"
-  }
-}

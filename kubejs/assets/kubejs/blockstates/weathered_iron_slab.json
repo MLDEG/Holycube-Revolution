@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kubejs:block/weathered_iron_slab"
+    },
+    "type=double": {
+      "model": "create:block/weathered_iron_block"
+    },
+    "type=top": {
+      "model": "kubejs:block/weathered_iron_slab_top"
+    }
+  }
+}

@@ -1,0 +1,5 @@
+#.
+#The vision range through dye fluids will be multiplied by this factor
+# Default: 1.0
+# Range: 1.0 ~ 256.0
+dyeVisionMultiplier = 1.0

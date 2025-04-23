@@ -17,9 +17,7 @@ ServerEvents.recipes(e => {
     var coral = ['horn', 'fire', 'bubble', 'brain', 'tube']
     coral.forEach(I => { corals(I) })
 
-    function ashCrafting(input) {
-        e.smelting('supplementaries:ash', input)
-    }
+    function ashCrafting(input) { e.smelting('supplementaries:ash', input) }
     var wood = ['#minecraft:wooden_buttons', '#minecraft:wooden_pressure_plates', '#minecraft:wooden_doors', '#minecraft:planks', '#minecraft:wooden_stairs', '#minecraft:wooden_slabs', '#c:fences/wooden', '#c:fence_gates/wooden', '#minecraft:wooden_trapdoors']
     wood.forEach(W => { ashCrafting(W) })
 
@@ -36,9 +34,101 @@ ServerEvents.recipes(e => {
     e.shapeless('kubejs:block_charcoal', '9x minecraft:charcoal')
 
     //pale moss
-    //Coal Block Slab
     e.shaped('3x minecraft:pale_moss_carpet', ['AA '], {
         A: 'minecraft:pale_moss_block'
+    })
+    //Blazing Template
+    e.shaped('create_dragons_plus:blaze_upgrade_smithing_template', ['BAB', 'BCB', 'BBB'], {
+        A: 'minecraft:netherite_upgrade_smithing_template',
+        B: 'minecraft:blaze_rod',
+        C: 'minecraft:netherrack',
+    })
+    //Sleeping Bag
+    function sleepingBag(color) { e.shaped('comforts:sleeping_bag_' + color, ['AAA'], { A: 'handcrafted:' + color + '_sheet', }) }
+    var colorBag = ['lime', 'yellow', 'orange', 'red', 'brown', 'black', 'gray', 'light_gray', 'white', 'pink', 'magenta', 'purple', 'blue', 'light_blue', 'cyan', 'green']
+    colorBag.forEach(C => { sleepingBag(C) })
+
+    function slabNstairs(input, output) {
+        //slab
+        e.stonecutting('2x kubejs:' + output + '_slab', input)
+        e.shaped('3x kubejs:' + output + '_slab', ['AAA'], { A: input })
+        //stairs
+        e.stonecutting('kubejs:' + output + '_stairs', input)
+        e.shaped('4x kubejs:' + output + '_stairs', ['A  ', 'AA ', 'AAA'], { A: input })
+    }
+
+    slabNstairs('create:industrial_iron_block', 'industrial_iron')
+    slabNstairs('create:weathered_iron_block', 'weathered_iron')
+    slabNstairs('minecraft:gravel', 'gravel')
+    slabNstairs('minecraft:moss_block', 'moss_block')
+    slabNstairs('minecraft:dirt', 'dirt')
+    slabNstairs('minecraft:sand', 'sand')
+    slabNstairs('minecraft:red_sand', 'red_sand')
+    slabNstairs('minecraft:pale_moss_block', 'pale_moss_block')
+    slabNstairs('minecraft:sculk', 'sculk')
+    slabNstairs('minecraft:glass', 'glass')
+    slabNstairs('minecraft:red_stained_glass', 'red_stained_glass')
+    slabNstairs('minecraft:orange_stained_glass', 'orange_stained_glass')
+    slabNstairs('minecraft:yellow_stained_glass', 'yellow_stained_glass')
+    slabNstairs('minecraft:lime_stained_glass', 'lime_stained_glass')
+    slabNstairs('minecraft:green_stained_glass', 'green_stained_glass')
+    slabNstairs('minecraft:blue_stained_glass', 'blue_stained_glass')
+    slabNstairs('minecraft:cyan_stained_glass', 'cyan_stained_glass')
+    slabNstairs('minecraft:light_blue_stained_glass', 'light_blue_stained_glass')
+    slabNstairs('minecraft:pink_stained_glass', 'pink_stained_glass')
+    slabNstairs('minecraft:magenta_stained_glass', 'magenta_stained_glass')
+    slabNstairs('minecraft:purple_stained_glass', 'purple_stained_glass')
+    slabNstairs('minecraft:brown_stained_glass', 'brown_stained_glass')
+    slabNstairs('minecraft:black_stained_glass', 'black_stained_glass')
+    slabNstairs('minecraft:gray_stained_glass', 'gray_stained_glass')
+    slabNstairs('minecraft:light_gray_stained_glass', 'light_gray_stained_glass')
+    slabNstairs('minecraft:white_stained_glass', 'white_stained_glass')
+
+    //Stick Bundle
+    e.shapeless('9x minecraft:stick', 'kubejs:sticks_bundle')
+    e.shapeless('kubejs:sticks_bundle', '9x minecraft:stick')
+
+    //Display Plate
+    e.shapeless('handcrafted:wood_plate', 'displaydelight:food_plate')
+    e.shapeless('displaydelight:food_plate', 'handcrafted:wood_plate')
+
+    //Stone Chaine
+    e.shaped('16x additionallanterns:stone_chain', ['A', 'B', 'A'], {
+        A: 'minecraft:stone',
+        B: 'minecraft:cobblestone'
+    })
+
+    //Raw Burger Bun
+    e.shapeless('someassemblyrequired:raw_burger_bun', ['farmersdelight:wheat_dough', '#c:seeds'])
+
+    //Diamond Sand Paper
+    e.shapeless('createsandpapers:mineral_sand_paper', ['minecraft:paper', 'minecraft:diamond'])
+
+    //Soul Sand Sand Paper
+    e.shapeless('createsandpapers:soul_sand_paper', ['minecraft:paper', '#minecraft:soul_fire_base_blocks'])
+
+    //Warped Lamp
+    e.shaped('4x additional_lights:al_lamp_warped_planks', ['A', 'B'], {
+        A: 'minecraft:glowstone',
+        B: 'minecraft:warped_planks'
+    })
+
+    //Crimson Lamp
+    e.shaped('4x additional_lights:al_lamp_crimson_planks', ['A', 'B'], {
+        A: 'minecraft:glowstone',
+        B: 'minecraft:crimson_planks'
+    })
+
+    //Warped AlTorch
+    e.shaped('4x additional_lights:al_torch_warped_planks', ['AA', 'AA', 'B '], {
+        A: 'minecraft:torch',
+        B: 'minecraft:warped_planks'
+    })
+
+    //Crimson AlTorch
+    e.shaped('4x additional_lights:al_torch_crimson_planks', ['AA', 'AA', 'B '], {
+        A: 'minecraft:torch',
+        B: 'minecraft:crimson_planks'
     })
 
 })

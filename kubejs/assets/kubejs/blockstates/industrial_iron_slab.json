@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "kubejs:block/industrial_iron_slab"
+    },
+    "type=double": {
+      "model": "create:block/industrial_iron_block"
+    },
+    "type=top": {
+      "model": "kubejs:block/industrial_iron_slab_top"
+    }
+  }
+}

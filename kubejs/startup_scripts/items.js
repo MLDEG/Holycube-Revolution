@@ -1,16 +1,8 @@
 StartupEvents.registry("item", (e) => {
     //Incomplete Dragon Egg
     e.create('incomplete_dragon_egg').displayName('§dIncomplete Dragon Egg')
-
-    // e.create('easter_egg').displayName('Easter EGG').food(food => {
-    //     food
-    //         .nutrition(1)
-    //         .saturation(1)
-    //         .effect('minecraft:speed', 600, 0, 1)
-    //         .removeEffect('minecraft:poison')
-    //         .alwaysEdible(true)
-    //         .eatSeconds(0.8)
-    // })
+    e.create('incomplete_ominous_bottle').displayName('Incomplete Ominous Bottle')
+    e.create('empty_ominous_bottle').displayName('Empty Ominous Bottle')
 })
 ItemEvents.modification(e => {
     e.modify('createsandpapers:mineral_sand_paper', item => {

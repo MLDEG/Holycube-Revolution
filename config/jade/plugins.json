@@ -92,6 +92,11 @@
   "jadeaddons.lootr": {
     "info": true
   },
+  "easy_villagers": {
+    "villager": true,
+    "converter": true,
+    "breeder": true
+  },
   "supplementaries": {
     "hat_stand": true
   },

@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/slab",
+    "textures": {
+        "bottom": "chipped:block/blackstone/sanded_blackstone",
+        "side": "chipped:block/blackstone/sanded_blackstone",
+        "top": "chipped:block/blackstone/sanded_blackstone"
+    }
+}

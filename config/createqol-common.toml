@@ -6,21 +6,21 @@
 	helmetHaveGoggles = true
 	#.
 	#Define if players can add propellers to their shadow radiance chestplate
-	propellersAllowed = true
+	propellersAllowed = false
 	#.
 	#Define if players can activate the hover mode with their shadow radiance chestplate
-	hoverAllowed = true
+	hoverAllowed = false
 	#.
 	#Define if the shadow radiance armor pieces give potion effects
-	armorEffectsEnable = true
+	armorEffectsEnable = false
 	#.
 	#Define if the diving effect is applied on the shadow radiance boots
 	#Diving makes players descend quicker in liquids 
-	bootsDiving = true
+	bootsDiving = false
 	#.
 	#Define if players can walk normally under lava with shadow radiance boots 
 	#Diving makes players descend quicker in liquids 
-	bootsLavaWalking = true
+	bootsLavaWalking = false
 
 		#.
 		#.

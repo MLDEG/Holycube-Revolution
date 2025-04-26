@@ -1,0 +1,13 @@
+{
+    "variants": {
+        "type=bottom": {
+            "model": "kubejs:block/sanded_blackstone_slab"
+        },
+        "type=double": {
+            "model": "chipped:block/sanded_blackstone"
+        },
+        "type=top": {
+            "model": "kubejs:block/sanded_blackstone_slab_top"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "variants": {
+        "facing=down": {
+            "model": "kubejs:block/center_cut_pale_oak_log",
+            "x": 180
+        },
+        "facing=east": {
+            "model": "kubejs:block/center_cut_pale_oak_log",
+            "x": 90,
+            "y": 90
+        },
+        "facing=north": {
+            "model": "kubejs:block/center_cut_pale_oak_log",
+            "x": 90
+        },
+        "facing=south": {
+            "model": "kubejs:block/center_cut_pale_oak_log",
+            "x": 90,
+            "y": 180
+        },
+        "facing=up": {
+            "model": "kubejs:block/center_cut_pale_oak_log"
+        },
+        "facing=west": {
+            "model": "kubejs:block/center_cut_pale_oak_log",
+            "x": 90,
+            "y": 270
+        }
+    }
+}

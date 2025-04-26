@@ -4,6 +4,8 @@
 /backups/
 /config/jei/world/
 /config/forgematica/
+/config/voicechat/username-cache.json
+/config/voicechat/voicechat-client.properties
 /crash-reports/
 /debug/
 /downloads/

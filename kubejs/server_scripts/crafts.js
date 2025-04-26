@@ -51,7 +51,7 @@ ServerEvents.recipes(e => {
     function slabNstairs(input, output) {
         //slab
         e.stonecutting('2x kubejs:' + output + '_slab', input)
-        e.shaped('3x kubejs:' + output + '_slab', ['AAA'], { A: input })
+        e.shaped('6x kubejs:' + output + '_slab', ['AAA'], { A: input })
         //stairs
         e.stonecutting('kubejs:' + output + '_stairs', input)
         e.shaped('4x kubejs:' + output + '_stairs', ['A  ', 'AA ', 'AAA'], { A: input })
@@ -83,6 +83,8 @@ ServerEvents.recipes(e => {
     slabNstairs('minecraft:gray_stained_glass', 'gray_stained_glass')
     slabNstairs('minecraft:light_gray_stained_glass', 'light_gray_stained_glass')
     slabNstairs('minecraft:white_stained_glass', 'white_stained_glass')
+    slabNstairs('minecraft:tinted_glass', 'tinted_glass')
+    slabNstairs('chipped:sanded_blackstone', 'sanded_blackstone')
 
     //Stick Bundle
     e.shapeless('9x minecraft:stick', 'kubejs:sticks_bundle')
@@ -130,5 +132,67 @@ ServerEvents.recipes(e => {
         A: 'minecraft:torch',
         B: 'minecraft:crimson_planks'
     })
+    //Pale Oak Heart
+    e.shaped('kubejs:pale_oak_heart', ['A', 'B', 'A'], {
+        A: 'minecraft:pale_oak_log',
+        B: 'minecraft:resin_block'
+    })
 
+    //Ominous Bottle II
+    e.custom({
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [{ "item": "minecraft:ominous_bottle" }, { "item": "create:experience_nugget" }],
+        "result": { "id": "minecraft:ominous_bottle", "components": { "minecraft:ominous_bottle_amplifier": 1 } }
+    })
+    //Ominous Bottle III
+    e.custom({
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [{ "item": "minecraft:ominous_bottle" }, { "item": "minecraft:blaze_rod" }],
+        "result": { "id": "minecraft:ominous_bottle", "components": { "minecraft:ominous_bottle_amplifier": 2 } }
+    })
+    //Ominous Bottle IV
+    e.custom({
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [{ "item": "minecraft:ominous_bottle" }, { "item": "minecraft:sculk" }],
+        "result": { "id": "minecraft:ominous_bottle", "components": { "minecraft:ominous_bottle_amplifier": 3 } }
+    })
+    //Ominous Bottle V
+    e.custom({
+        "type": "minecraft:crafting_shapeless",
+        "ingredients": [{ "item": "minecraft:ominous_bottle" }, { "item": "minecraft:breeze_rod" }],
+        "result": { "id": "minecraft:ominous_bottle", "components": { "minecraft:ominous_bottle_amplifier": 4 } }
+    })
+
+    /****************************** Lychee Crafts ******************************/
+    //Pale Oak Heart
+    e.custom({
+        "type": "lychee:block_interacting",
+        "item_in": { "tag": "c:tools/knife" },
+        "block_in": "kubejs:pale_oak_heart",
+        "post": [
+            { "type": "drop_item", "id": "minecraft:resin_clump" },
+            { "type": "damage_item" },
+            { "type": "place", "block": "kubejs:empty_pale_oak_heart", "if": { "type": "chance", "chance": 0.1 } }
+        ]
+    })
+    //Wildflowers
+    e.custom({
+        "type": "lychee:block_interacting",
+        "item_in": { "item": "minecraft:yellow_dye" },
+        "block_in": "minecraft:pink_petals",
+        "post": [{ "type": "place", "block": "minecraft:wildflowers" }]
+    })
+
+    //Leather
+    e.smelting('minecraft:leather', 'minecraft:rotten_flesh')
+
+    //Nether Brick Button
+    e.shapeless('kubejs:nether_brick_button', 'minecraft:nether_bricks')
+    e.shapeless('kubejs:brick_button', 'minecraft:bricks')
+    e.shapeless('kubejs:red_nether_brick_button', 'minecraft:red_nether_bricks')
+    e.shapeless('kubejs:polished_deepslate_button', 'minecraft:polished_deepslate')
+
+    //Chipped Crafts
+    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_log" }] })
+    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_planks" }] })
 })

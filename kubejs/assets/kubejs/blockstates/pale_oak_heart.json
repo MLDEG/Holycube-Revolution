@@ -1,0 +1,16 @@
+{
+	"variants": {
+		"axis=x": {
+			"model": "kubejs:block/pale_oak_heart",
+			"x": 90,
+			"y": 90
+		},
+		"axis=y": {
+			"model": "kubejs:block/pale_oak_heart"
+		},
+		"axis=z": {
+			"model": "kubejs:block/pale_oak_heart",
+			"x": 90
+		}
+	}
+}

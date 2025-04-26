@@ -1,0 +1,10 @@
+{
+    "parent": "minecraft:block/orientable_with_bottom",
+    "textures": {
+        "bottom": "kubejs:block/pale_oak_log/edge_cut_pale_oak_log_top",
+        "front": "kubejs:block/pale_oak_log/edge_cut_pale_oak_log",
+        "particle": "kubejs:block/pale_oak_log/edge_cut_pale_oak_log",
+        "side": "kubejs:block/pale_oak_log/edge_cut_pale_oak_log",
+        "top": "kubejs:block/pale_oak_log/edge_cut_pale_oak_log_top"
+    }
+}

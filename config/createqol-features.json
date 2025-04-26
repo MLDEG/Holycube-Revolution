@@ -1,7 +1,7 @@
 {
   "chippedSaw": true,
   "inventoryLinker": false,
-  "shadowRadiance": false,
+  "shadowRadiance": true,
   "proximitySchedule": true,
   "displayBoardModification": true
 }

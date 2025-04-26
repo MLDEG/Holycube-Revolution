@@ -72,7 +72,19 @@ RecipeViewerEvents.removeEntries('item', (e) => {
         'createsandpapers:coral_sand_paper',
         'createsandpapers:soulless_sand_paper',
         'kubejs:nerf_enderman',
-        'kubejs:incomplete_dragon_egg'
+        'kubejs:incomplete_dragon_egg',
+        'createqol:shadow_radiance',
+        'createqol:shadow_radiance_boots',
+        'createqol:shadow_radiance_leggings',
+        'createqol:shadow_radiance_chestplate',
+        'createqol:shadow_radiance_helmet',
+        'easy_villagers:farmer',
+        'easy_villagers:iron_farm',
+        'kubejs:incomplete_pale_oak_heart',
+        'kubejs:incomplete_ominous_bottle',
+        'mapperbase:flatter_hammer',
+        'mapperbase:reinforced_flatter_hammer',
+        'mapperbase:iron_plate'
     ])
 });
 RecipeViewerEvents.removeEntries('fluid', (e) => {

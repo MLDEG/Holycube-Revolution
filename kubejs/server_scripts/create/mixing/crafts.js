@@ -7,6 +7,10 @@ ServerEvents.recipes(e => {
     e.custom({ "type": "create:mixing", "ingredients": [{ "item": "minecraft:dirt" }, { "tag": "c:mushrooms" }, { "type": "fluid_tag", "amount": 250, "fluid_tag": "c:water" }], "results": [{ "id": "minecraft:mycelium" }] })
     //Asphalt
     e.custom({ "type": "create:mixing", "heat_requirement": "heated", "ingredients": [{ "item": "minecraft:black_concrete_powder" }, { "type": "fluid_stack", "amount": 50, "fluid": "create_things_and_misc:slime" }], "results": [{ "id": "create_d2d:asphalt" }] })
+    //Tinted Glass Alt
+    e.custom({ "type": "create:mixing", "heat_requirement": "heated", "ingredients": [{ "item": "minecraft:glass" }, { "item": "minecraft:iron_nugget" }], "results": [{ "id": "minecraft:tinted_glass" }] })
+    //Creamy Terracotta
+    e.custom({ "type": "create:mixing", "ingredients": [{ "item": "minecraft:terracotta" }, { "type": "fluid_stack", "amount": 50, "fluid": "minecraft:milk" }], "results": [{ "id": "kubejs:creamy_terracotta" }] })
     //Dye Crafts
     function dyeCrafts(dye) {
         e.custom({ "type": "create:mixing", "ingredients": [{ "item": "minecraft:" + dye + "_dye" }, { "type": "fluid_tag", "amount": 250, "fluid_tag": "c:water" }], "results": [{ "amount": 250, "id": "kubejs:" + dye }] })

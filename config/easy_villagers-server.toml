@@ -37,15 +37,15 @@
 	#The minimum amount of time in ticks the auto trader takes to restock
 	# Default: 1200
 	# Range: > 1
-	min_restock_time = 1
+	min_restock_time = 100
 	#The maximum amount of time in ticks the auto trader takes to restock
 	# Default: 3600
 	# Range: > 2
-	max_restock_time = 2
+	max_restock_time = 200
 	#The cooldown in ticks for the auto trader to do a trade
 	# Default: 20
 	# Range: > 1
-	trade_cooldown = 20
+	trade_cooldown = 10
 
 [villager]
 	#If villagers should make sounds while in the players inventory

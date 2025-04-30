@@ -163,6 +163,22 @@ ServerEvents.recipes(e => {
         "result": { "id": "minecraft:ominous_bottle", "components": { "minecraft:ominous_bottle_amplifier": 4 } }
     })
 
+    //Leather
+    e.smelting('minecraft:leather', 'minecraft:rotten_flesh')
+
+    //Nether Brick Button
+    e.shapeless('kubejs:nether_brick_button', 'minecraft:nether_bricks')
+    e.shapeless('kubejs:brick_button', 'minecraft:bricks')
+    e.shapeless('kubejs:red_nether_brick_button', 'minecraft:red_nether_bricks')
+    e.shapeless('kubejs:polished_deepslate_button', 'minecraft:polished_deepslate')
+
+    //Chipped Crafts
+    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_log" }] })
+    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_planks" }] })
+
+    //Vault Component
+    e.shapeless('create_sa:vault_component', ['create:item_vault', 'minecraft:tripwire_hook'])
+
     /****************************** Lychee Crafts ******************************/
     //Pale Oak Heart
     e.custom({
@@ -182,17 +198,18 @@ ServerEvents.recipes(e => {
         "block_in": "minecraft:pink_petals",
         "post": [{ "type": "place", "block": "minecraft:wildflowers" }]
     })
+    function dupBoneMeal(item, block) {
+        e.custom({
+            "type": "lychee:block_interacting",
+            "item_in": { "item": "minecraft:bone_meal" },
+            "block_in": block,
+            "post": [{ "type": "drop_item", "id": item }]
+        })
+    }
+    dupBoneMeal('endersdelight:amberveil', 'endersdelight:amberveil_mushroom')
+    dupBoneMeal('endersdelight:chorusflame', 'endersdelight:chorusflame_bush')
+    dupBoneMeal('endersdelight:ethereal_saffron', 'endersdelight:ethereal_saffron_bush')
+    dupBoneMeal('endersdelight:voidpepper', 'endersdelight:voidpepper_bush')
 
-    //Leather
-    e.smelting('minecraft:leather', 'minecraft:rotten_flesh')
 
-    //Nether Brick Button
-    e.shapeless('kubejs:nether_brick_button', 'minecraft:nether_bricks')
-    e.shapeless('kubejs:brick_button', 'minecraft:bricks')
-    e.shapeless('kubejs:red_nether_brick_button', 'minecraft:red_nether_bricks')
-    e.shapeless('kubejs:polished_deepslate_button', 'minecraft:polished_deepslate')
-
-    //Chipped Crafts
-    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_log" }] })
-    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_planks" }] })
 })

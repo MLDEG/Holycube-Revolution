@@ -12,7 +12,7 @@
 	hoverAllowed = false
 	#.
 	#Define if the shadow radiance armor pieces give potion effects
-	armorEffectsEnable = false
+	armorEffectsEnable = true
 	#.
 	#Define if the diving effect is applied on the shadow radiance boots
 	#Diving makes players descend quicker in liquids 
@@ -20,7 +20,7 @@
 	#.
 	#Define if players can walk normally under lava with shadow radiance boots 
 	#Diving makes players descend quicker in liquids 
-	bootsLavaWalking = false
+	bootsLavaWalking = true
 
 		#.
 		#.

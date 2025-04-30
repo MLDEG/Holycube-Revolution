@@ -1,0 +1,3 @@
+[piglin]
+	#If piglins should make sounds while in the players inventory
+	inventory_sounds = false

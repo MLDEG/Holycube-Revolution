@@ -5706,7 +5706,92 @@
       "frequency": 0.03,
       "movement": "TRAILING_HEAD" 
     
+    }},
+
+
+    "eiffel_tour_hat": { 
+    "name": "eiffel_tour_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 16777215 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "kitsune": { 
+    "name": "kitsune",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 10312441 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "detective_hat": { 
+    "name": "detective_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 7824985 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "eiffel_tour_glasses": { 
+    "name": "eiffel_tour_glasses",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": false,
+      "decimal color": 7824985 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
     }}
+
+
+
+
+
+
+
+
+
 
 
 

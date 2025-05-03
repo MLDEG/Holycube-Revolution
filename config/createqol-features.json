@@ -3,5 +3,7 @@
   "inventoryLinker": false,
   "shadowRadiance": true,
   "proximitySchedule": true,
-  "displayBoardModification": true
+  "displayBoardModification": true,
+  "blazeBurnerUseLiquids": true,
+  "statue": true
 }

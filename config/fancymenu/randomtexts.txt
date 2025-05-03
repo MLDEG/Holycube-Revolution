@@ -31,3 +31,4 @@
 &c Mais ou s'est caché le GANG ?
 &d       Le GANG        
 &6   HC &l"game drops"
+&6    Rendez le tatou

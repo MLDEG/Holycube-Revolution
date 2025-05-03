@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "handcrafted:block/cupboard/pale_oak/cupboard_top",
+    "east": "handcrafted:block/cupboard/pale_oak/cupboard_side",
+    "north": "handcrafted:block/cupboard/pale_oak/cupboard_2",
+    "particle": "minecraft:block/pale_oak_planks",
+    "south": "handcrafted:block/cupboard/pale_oak/cupboard_back",
+    "up": "handcrafted:block/cupboard/pale_oak/cupboard_top",
+    "west": "handcrafted:block/cupboard/pale_oak/cupboard_side"
+  }
+}

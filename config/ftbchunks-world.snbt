@@ -89,7 +89,7 @@
 		# AVERAGE: use the average of all members' limits.
 		# Default: "largest"
 		# Valid values: "largest", "owner", "sum", "average"
-		party_limit_mode: "largest"
+		party_limit_mode: "sum"
 	}
 	dev: {
 		# Enable dev commands
@@ -115,7 +115,7 @@
 		# DEFAULT: allow force-loading IF the team has at least one player with the 'ftbchunks.chunk_load_offline' FTB Ranks permission.
 		# Default: "default"
 		# Valid values: "default", "always", "never"
-		force_load_mode: "always"
+		force_load_mode: "never"
 		
 		# Hard limit for the number of chunks a team can force-load, regardless of how many members. Default of 0 means no hard limit.
 		# Default: 0
@@ -133,7 +133,7 @@
 		# Default of 0 means no automatic loss of forceloading.
 		# Default: 0.0
 		# Range: 0.0 ~ 3650.0
-		max_idle_days_before_unforce: 365.0d
+		max_idle_days_before_unforce: 3650.0d
 	}
 	team_prop_defaults: {
 		# Default explosion protection for claimed chunks

@@ -73,11 +73,6 @@ RecipeViewerEvents.removeEntries('item', (e) => {
         'createsandpapers:soulless_sand_paper',
         'kubejs:nerf_enderman',
         'kubejs:incomplete_dragon_egg',
-        'createqol:shadow_radiance',
-        'createqol:shadow_radiance_boots',
-        'createqol:shadow_radiance_leggings',
-        'createqol:shadow_radiance_chestplate',
-        'createqol:shadow_radiance_helmet',
         'easy_villagers:farmer',
         'easy_villagers:iron_farm',
         'kubejs:incomplete_pale_oak_heart',
@@ -87,6 +82,10 @@ RecipeViewerEvents.removeEntries('item', (e) => {
         'mapperbase:iron_plate'
     ])
 });
+RecipeViewerEvents.addEntries('item', e => {
+    e.add('bedrock_breaker:bedrock_breaker');
+    e.add('minecraft:bundle');
+})
 RecipeViewerEvents.removeEntries('fluid', (e) => {
     e.remove('create_d2d:sap',)
     e.remove('create_d2d:pumpkin_milkshake')
@@ -113,5 +112,4 @@ RecipeViewerEvents.removeEntries('fluid', (e) => {
 });
 RecipeViewerEvents.removeCategories(e => {
     e.remove('create_dragons_plus:coloring')
-
 });

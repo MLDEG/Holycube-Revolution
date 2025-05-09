@@ -3,7 +3,6 @@ ServerEvents.recipes(e => {
     //Plolished Rose Quartz Block
     e.shapeless('kubejs:polished_rose_quartz_block', '9x create:polished_rose_quartz')
     e.shapeless('9x create:polished_rose_quartz', 'kubejs:polished_rose_quartz_block')
-
     //Coral Crafts
     function corals(item) {
         e.shapeless('4x minecraft:' + item + '_coral', 'minecraft:' + item + '_coral_block')
@@ -16,11 +15,9 @@ ServerEvents.recipes(e => {
     }
     var coral = ['horn', 'fire', 'bubble', 'brain', 'tube']
     coral.forEach(I => { corals(I) })
-
     function ashCrafting(input) { e.smelting('supplementaries:ash', input) }
     var wood = ['#minecraft:wooden_buttons', '#minecraft:wooden_pressure_plates', '#minecraft:wooden_doors', '#minecraft:planks', '#minecraft:wooden_stairs', '#minecraft:wooden_slabs', '#c:fences/wooden', '#c:fence_gates/wooden', '#minecraft:wooden_trapdoors']
     wood.forEach(W => { ashCrafting(W) })
-
     //Shelf Supplementaries
     e.shapeless('supplementaries:item_shelf', '#minecraft:wooden_slabs')
     //Coal Block Slab
@@ -28,11 +25,9 @@ ServerEvents.recipes(e => {
         A: 'minecraft:coal_block'
     })
     e.stonecutting('2x kubejs:coal_block_slab', 'minecraft:coal_block')
-
     //Charcoal Block
     e.shapeless('9x minecraft:charcoal', 'kubejs:block_charcoal')
     e.shapeless('kubejs:block_charcoal', '9x minecraft:charcoal')
-
     //pale moss
     e.shaped('3x minecraft:pale_moss_carpet', ['AA '], {
         A: 'minecraft:pale_moss_block'
@@ -47,7 +42,6 @@ ServerEvents.recipes(e => {
     function sleepingBag(color) { e.shaped('comforts:sleeping_bag_' + color, ['AAA'], { A: 'handcrafted:' + color + '_sheet', }) }
     var colorBag = ['lime', 'yellow', 'orange', 'red', 'brown', 'black', 'gray', 'light_gray', 'white', 'pink', 'magenta', 'purple', 'blue', 'light_blue', 'cyan', 'green']
     colorBag.forEach(C => { sleepingBag(C) })
-
     function slabNstairs(input, output) {
         //slab
         e.stonecutting('2x kubejs:' + output + '_slab', input)
@@ -56,7 +50,6 @@ ServerEvents.recipes(e => {
         e.stonecutting('kubejs:' + output + '_stairs', input)
         e.shaped('4x kubejs:' + output + '_stairs', ['A  ', 'AA ', 'AAA'], { A: input })
     }
-
     slabNstairs('create:industrial_iron_block', 'industrial_iron')
     slabNstairs('create:weathered_iron_block', 'weathered_iron')
     slabNstairs('minecraft:gravel', 'gravel')
@@ -65,6 +58,7 @@ ServerEvents.recipes(e => {
     slabNstairs('minecraft:sand', 'sand')
     slabNstairs('minecraft:red_sand', 'red_sand')
     slabNstairs('minecraft:pale_moss_block', 'pale_moss_block')
+    slabNstairs('minecraft:honeycomb_block', 'honeycomb_block')
     slabNstairs('minecraft:sculk', 'sculk')
     slabNstairs('minecraft:glass', 'glass')
     slabNstairs('minecraft:red_stained_glass', 'red_stained_glass')
@@ -85,48 +79,38 @@ ServerEvents.recipes(e => {
     slabNstairs('minecraft:white_stained_glass', 'white_stained_glass')
     slabNstairs('minecraft:tinted_glass', 'tinted_glass')
     slabNstairs('chipped:sanded_blackstone', 'sanded_blackstone')
-
     //Stick Bundle
     e.shapeless('9x minecraft:stick', 'kubejs:sticks_bundle')
     e.shapeless('kubejs:sticks_bundle', '9x minecraft:stick')
-
     //Display Plate
     e.shapeless('handcrafted:wood_plate', 'displaydelight:food_plate')
     e.shapeless('displaydelight:food_plate', 'handcrafted:wood_plate')
-
     //Stone Chaine
     e.shaped('16x additionallanterns:stone_chain', ['A', 'B', 'A'], {
         A: 'minecraft:stone',
         B: 'minecraft:cobblestone'
     })
-
     //Raw Burger Bun
     e.shapeless('someassemblyrequired:raw_burger_bun', ['farmersdelight:wheat_dough', '#c:seeds'])
-
     //Diamond Sand Paper
     e.shapeless('createsandpapers:mineral_sand_paper', ['minecraft:paper', 'minecraft:diamond'])
-
     //Soul Sand Sand Paper
     e.shapeless('createsandpapers:soul_sand_paper', ['minecraft:paper', '#minecraft:soul_fire_base_blocks'])
-
     //Warped Lamp
     e.shaped('4x additional_lights:al_lamp_warped_planks', ['A', 'B'], {
         A: 'minecraft:glowstone',
         B: 'minecraft:warped_planks'
     })
-
     //Crimson Lamp
     e.shaped('4x additional_lights:al_lamp_crimson_planks', ['A', 'B'], {
         A: 'minecraft:glowstone',
         B: 'minecraft:crimson_planks'
     })
-
     //Warped AlTorch
     e.shaped('4x additional_lights:al_torch_warped_planks', ['AA', 'AA', 'B '], {
         A: 'minecraft:torch',
         B: 'minecraft:warped_planks'
     })
-
     //Crimson AlTorch
     e.shaped('4x additional_lights:al_torch_crimson_planks', ['AA', 'AA', 'B '], {
         A: 'minecraft:torch',
@@ -137,7 +121,6 @@ ServerEvents.recipes(e => {
         A: 'minecraft:pale_oak_log',
         B: 'minecraft:resin_block'
     })
-
     //Ominous Bottle II
     e.custom({
         "type": "minecraft:crafting_shapeless",
@@ -162,7 +145,89 @@ ServerEvents.recipes(e => {
         "ingredients": [{ "item": "minecraft:ominous_bottle" }, { "item": "minecraft:breeze_rod" }],
         "result": { "id": "minecraft:ominous_bottle", "components": { "minecraft:ominous_bottle_amplifier": 4 } }
     })
+    //Leather
+    e.smelting('minecraft:leather', 'minecraft:rotten_flesh')
+    //Nether Brick Button
+    e.shapeless('kubejs:nether_brick_button', 'minecraft:nether_bricks')
+    e.shapeless('kubejs:brick_button', 'minecraft:bricks')
+    e.shapeless('kubejs:red_nether_brick_button', 'minecraft:red_nether_bricks')
+    e.shapeless('kubejs:polished_deepslate_button', 'minecraft:polished_deepslate')
+    //Chipped Crafts
+    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_log" }] })
+    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_planks" }] })
+    //Vault Component
+    e.shapeless('create_sa:vault_component', ['create:item_vault', 'minecraft:tripwire_hook'])
+    //Pale Oak Corner Trim
+    e.shaped('4x kubejs:pale_oak_corner_trim', ['A  ', 'A  ', 'AAA'], {
+        A: 'minecraft:pale_oak_planks'
+    })
+    //Pale Oak Pillar Trim
+    e.shaped('4x kubejs:pale_oak_pillar_trim', ['A', 'A', 'A'], {
+        A: 'minecraft:pale_oak_planks'
+    })
+    //Pale Oak Bench
+    e.shaped('2x kubejs:pale_oak_bench', ['AAA', 'BBB', 'A A'], {
+        A: 'minecraft:pale_oak_planks',
+        B: 'minecraft:pale_oak_slab'
+    })
+    //Pale Oak Couch
+    e.shaped('2x kubejs:pale_oak_couch', ['BCB', 'AAA'], {
+        A: 'minecraft:pale_oak_planks',
+        B: '#minecraft:wool',
+        C: '#handcrafted:cushions'
+    })
+    //Pale Oak Chair
+    e.shaped('2x kubejs:pale_oak_chair', ['B ', 'AA', 'CC'], {
+        A: 'minecraft:pale_oak_planks',
+        B: 'minecraft:pale_oak_slab',
+        C: 'minecraft:stick'
+    })
+    //Pale Oak Dining Bench
+    e.shaped('2x kubejs:pale_oak_dining_bench', ['BBB', 'A A'], {
+        A: 'minecraft:pale_oak_planks',
+        B: 'minecraft:pale_oak_slab'
+    })
+    //Pale Oak Table
+    e.shaped('2x kubejs:pale_oak_table', ['AAA', 'B B'], {
+        A: 'minecraft:pale_oak_planks',
+        B: 'minecraft:stick'
+    })
+    //Pale Oak Fancy Bed
+    e.shaped('kubejs:pale_oak_fancy_bed', [' DB', 'ACC', 'AAA'], {
+        A: 'minecraft:pale_oak_planks',
+        B: '#handcrafted:sheets',
+        C: '#minecraft:wool',
+        D: '#handcrafted:cushions'
+    })
 
+    //Bedrock Breaker
+    e.custom({
+        "type": "minecraft:crafting_shaped", "category": "misc", "key": { "#": { "item": "minecraft:stick" }, "X": { "item": "minecraft:netherite_block" } },
+        "pattern": ["XXX", " # ", " # "],
+        "result": { "count": 1, "id": "bedrock_breaker:bedrock_breaker", "components": { "minecraft:max_damage": 900, "minecraft:custom_data": { "last_layer": false, "the_end": false } } }
+    })
+    //Mob Detector
+    e.shaped('entitydetectors:mob_detector', ["ABA", "CDC", "AEA"], {
+        A: 'minecraft:red_nether_bricks',
+        B: '#c:slimeballs',
+        C: 'minecraft:spider_eye',
+        D: '#c:gems/quartz',
+        E: '#c:dusts/redstone'
+    })
+    //Player Detector
+    e.shaped('entitydetectors:player_detector', ["ABA", "CDC", "ABA"], {
+        A: '#c:cobblestones',
+        B: '#c:dusts/redstone',
+        C: 'minecraft:spider_eye',
+        D: '#c:gems/quartz',
+    })
+    //Bundle
+    e.shaped('minecraft:bundle', ["A", "B"], {
+        A: 'minecraft:string',
+        B: 'minecraft:leather'
+    })
+    //Ink Sac
+    e.shapeless('minecraft:ink_sac', ['minecraft:black_dye', 'minecraft:leather'])
     /****************************** Lychee Crafts ******************************/
     //Pale Oak Heart
     e.custom({
@@ -182,17 +247,24 @@ ServerEvents.recipes(e => {
         "block_in": "minecraft:pink_petals",
         "post": [{ "type": "place", "block": "minecraft:wildflowers" }]
     })
+    function dupBoneMeal(item, block) {
+        e.custom({
+            "type": "lychee:block_interacting",
+            "item_in": { "item": "minecraft:bone_meal" },
+            "block_in": block,
+            "post": [{ "type": "drop_item", "id": item }]
+        })
+    }
+    dupBoneMeal('endersdelight:amberveil', 'endersdelight:amberveil_mushroom')
+    dupBoneMeal('endersdelight:chorusflame', 'endersdelight:chorusflame_bush')
+    dupBoneMeal('endersdelight:ethereal_saffron', 'endersdelight:ethereal_saffron_bush')
+    dupBoneMeal('endersdelight:voidpepper', 'endersdelight:voidpepper_bush')
+    dupBoneMeal('minecraft:torchflower', 'minecraft:torchflower')
+    dupBoneMeal('minecraft:pitcher_plant', 'minecraft:pitcher_plant')
 
-    //Leather
-    e.smelting('minecraft:leather', 'minecraft:rotten_flesh')
-
-    //Nether Brick Button
-    e.shapeless('kubejs:nether_brick_button', 'minecraft:nether_bricks')
-    e.shapeless('kubejs:brick_button', 'minecraft:bricks')
-    e.shapeless('kubejs:red_nether_brick_button', 'minecraft:red_nether_bricks')
-    e.shapeless('kubejs:polished_deepslate_button', 'minecraft:polished_deepslate')
-
-    //Chipped Crafts
-    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_log" }] })
-    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_planks" }] })
+    //Stripped Mushroom Block
+    function strippedMushroom(blockIn, blockOut) { e.custom({ "type": "lychee:block_interacting", "item_in": { "tag": "minecraft:axes" }, "block_in": blockIn, "post": [{ "type": "place", "block": blockOut }, { "type": "damage_item" }] }) }
+    strippedMushroom('minecraft:mushroom_stem', 'minecraft:stripped_mushroom_stem')
+    strippedMushroom('minecraft:red_mushroom_block', 'minecraft:stripped_red_mushroom_block')
+    strippedMushroom('minecraft:brown_mushroom_block', 'minecraft:stripped_brown_mushroom_block')
 })

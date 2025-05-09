@@ -8,7 +8,7 @@
 
 	[itemzoom.toggled]
 		#If set to "false", Item Zoom will be disabled.
-		enabled = true
+		enabled = false
 
 	[itemzoom.show]
 		#Display name "Item Zoom" and the hotkey to toggle this mod below the zoomed item.

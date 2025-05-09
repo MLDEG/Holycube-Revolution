@@ -39,4 +39,6 @@ ServerEvents.recipes(e => {
     e.custom({ "type": "create:mixing", "heat_requirement": "heated", "ingredients": [{ "type": "fluid_tag", "amount": 250, "fluid_tag": "c:water" }], "results": [{ "id": "expandeddelight:salt" }] })
     //Wheat Dough
     e.custom({ "type": "create:mixing", "ingredients": [{ "type": "fluid_tag", "amount": 250, "fluid_tag": "c:water" }, { "item": "expandeddelight:salt" }, { "item": "create:wheat_flour" }], "results": [{ "id": "farmersdelight:wheat_dough" }] })
+    //Tomato Sauce
+    e.custom({ "type": "create:mixing", "ingredients": [{ "tag": "c:foods/tomato" }, { "tag": "c:foods/tomato" }, { "item": 'minecraft:bowl' }], "results": [{ "id": 'farmersdelight:tomato_sauce' }] })
 })

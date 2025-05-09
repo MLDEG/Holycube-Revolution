@@ -19,6 +19,9 @@ StartupEvents.registry("block", (e) => {
     }
     block('polished_rose_quartz_block', 'Polish rose Quartz Block', 5.0, 'metal', 'pickaxe')
     block('creamy_terracotta', 'Creamy Terracotta', 1.25, 'stone', 'pickaxe')
+    block('minecraft:stripped_mushroom_stem', 'Stripped Mushroom Stem', 0.2, 'wood', 'axe')
+    block('minecraft:stripped_red_mushroom_block', 'Stripped Red Mushroom Block', 0.2, 'wood', 'axe')
+    block('minecraft:stripped_brown_mushroom_block', 'Stripped Brown Mushroom Block', 0.2, 'wood', 'axe')
     button('nether_brick_button', 'Nether Brick Button', 0.5, 'nether_bricks')
     button('brick_button', 'Brick Button', 0.5, 'stone')
     button('polished_deepslate_button', 'Polished Deepslate Button', 0.5, 'deepslate')

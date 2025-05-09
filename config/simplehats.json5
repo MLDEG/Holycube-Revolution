@@ -2,7 +2,7 @@
 	"COMMON": {
 		"keepHatOnDeath": true,
 		"seasonalBagChance": 20,
-		"allowHatInHelmetSlot": false,
+		"allowHatInHelmetSlot": true,
 		"entityLoot": {
 			"enableMobLoot": true,
 			"entityNoneWeight": 200,

@@ -80,8 +80,6 @@ ServerEvents.recipes(e => {
         'someassemblyrequired:crafting_shapeless/raw_burger_bun',
         'create:mixing/dough_by_mixing',
         'farmersdelight:integration/create/mixing/pie_crust_from_mixing',
-        /createqol:sequenced_assembly/,
-        'createqol:mixing/shadow_radiance',
         'easy_villagers:iron_farm',
         'easy_villagers:farmer',
         'mapperbase:pig_iron_chunk',
@@ -90,7 +88,11 @@ ServerEvents.recipes(e => {
         'mapperbase:flatter_hammer',
         'mapperbase:raw_steel',
         'mapperbase:steel_plate',
-        'mapperbase:rivet'
+        'mapperbase:rivet',
+        'create_sa:vault_component_recipe',
+        'farmersdelight:integration/create/mixing/tomato_sauce_from_mixing',
+        'entitydetectors:mob_detector',
+        'entitydetectors:player_detector'
     ]
     removeId.forEach(C => { r(C) })
 })

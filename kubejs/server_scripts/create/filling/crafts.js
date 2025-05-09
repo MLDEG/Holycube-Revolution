@@ -34,4 +34,7 @@ ServerEvents.recipes(e => {
     //Pale Oak Heart
     e.custom({ "type": "create:filling", "ingredients": [{ "item": "kubejs:empty_pale_oak_heart" }, { "type": "fluid_stack", "amount": 250, "fluid": "create_confectionery:caramel" }], "results": [{ "id": "kubejs:pale_oak_heart" }] })
 
+    //Pale Oak Heart
+    e.custom({ "type": "create:filling", "ingredients": [{ "item": "minecraft:snowball" }, { "type": "fluid_stack", "amount": 250, "fluid": "kubejs:lime" }], "results": [{ "id": "minecraft:slime_ball" }] })
+
 })

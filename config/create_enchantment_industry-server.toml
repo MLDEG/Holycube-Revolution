@@ -98,6 +98,38 @@
 		# Default: 50
 		# Range: > 1
 		experienceLanternDrainRate = 50
+		#.
+		#If printing Written Book function of Printer should be enabled.
+		#[@cui:RequiresReload:server]
+		enableWrittenBookPrinting = true
+		#.
+		#If printing Enchanted Book function of Printer should be enabled.
+		#[@cui:RequiresReload:server]
+		enableEnchantedBookPrinting = true
+		#.
+		#If printing Create's copiable item of Printer should be enabled.
+		#[@cui:RequiresReload:server]
+		enableCreateCopiableItemPrinting = true
+		#.
+		#If changing package pattern function of Printer should be enabled.
+		#[@cui:RequiresReload:server]
+		enablePackagePatternPrinting = true
+		#.
+		#If assigning package address function of Printer should be enabled.
+		#[@cui:RequiresReload:server]
+		enablePackageAddressPrinting = true
+		#.
+		#If assigning custom name function of Printer should be enabled.
+		#[@cui:RequiresReload:server]
+		enableCustomNamePrinting = true
+		#.
+		#The cost multiplier of printing Enchanted Book.
+		# Default: 1.0
+		# Range: 0.009999999776482582 ~ 100.0
+		printingEnchantedBookCostMultiplier = 1.0
+		#.
+		#Whether Printer denylist prevents enchanted book from being copying.Setting false allows copying enchanted book without denied enchantment
+		printingEnchantedBookDenylistStopCopying = true
 
 	#.
 	#Parameters and abilities of enchantment operating components
@@ -121,6 +153,9 @@
 		#.
 		#If Super Enchanting and Super Forging ignores enchantment compatibility
 		ignoreEnchantmentCompatibility = true
+		#.
+		#If Enchantment splitting respects over-capped level
+		splitEnchantmentRespectLevelExtension = false
 
 	#.
 	#Parameters and abilities of processing mechanisms and appliances

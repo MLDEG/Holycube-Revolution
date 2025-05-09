@@ -82,6 +82,10 @@ RecipeViewerEvents.removeEntries('item', (e) => {
         'mapperbase:iron_plate'
     ])
 });
+RecipeViewerEvents.addEntries('item', e => {
+    e.add('bedrock_breaker:bedrock_breaker');
+    e.add('minecraft:bundle');
+})
 RecipeViewerEvents.removeEntries('fluid', (e) => {
     e.remove('create_d2d:sap',)
     e.remove('create_d2d:pumpkin_milkshake')
@@ -108,5 +112,4 @@ RecipeViewerEvents.removeEntries('fluid', (e) => {
 });
 RecipeViewerEvents.removeCategories(e => {
     e.remove('create_dragons_plus:coloring')
-
 });

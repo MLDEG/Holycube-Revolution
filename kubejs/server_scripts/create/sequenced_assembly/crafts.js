@@ -108,5 +108,28 @@ ServerEvents.recipes(e => {
             "transitional_item": { "id": "mapperbase:pig_iron_chunk" }
         }
     )
+    //Blaze Rod
+    e.custom(
+        {
+            "type": "create:sequenced_assembly",
+            "ingredient": { "item": "create_things_and_misc:crushed_magma" },
+            "loops": 1,
+            "results": [{ "id": "minecraft:blaze_rod" }],
+            "sequence": [
+                {
+                    "type": "create:deploying",
+                    "ingredients": [{ "item": "create_things_and_misc:crushed_magma" }, { "item": "minecraft:blaze_powder" }],
+                    "results": [{ "id": "create_things_and_misc:crushed_magma" }]
+                },
+                { "type": "create:pressing", "ingredients": [{ "item": "create_things_and_misc:crushed_magma" }], "results": [{ "id": "create_things_and_misc:crushed_magma" }] },
+                { "type": "create:pressing", "ingredients": [{ "item": "create_things_and_misc:crushed_magma" }], "results": [{ "id": "create_things_and_misc:crushed_magma" }] },
+                { "type": "create:pressing", "ingredients": [{ "item": "create_things_and_misc:crushed_magma" }], "results": [{ "id": "create_things_and_misc:crushed_magma" }] },
+                { "type": "create:pressing", "ingredients": [{ "item": "create_things_and_misc:crushed_magma" }], "results": [{ "id": "create_things_and_misc:crushed_magma" }] }
+            ],
+            "transitional_item": { "id": "create_things_and_misc:crushed_magma" }
+        }
+    )
+
+
 
 })

@@ -1,0 +1,4 @@
+#How often entity detectors will check for entities (in ticks per update)
+# Default: 10
+# Range: > 1
+refresh_rate = 10

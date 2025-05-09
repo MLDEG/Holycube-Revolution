@@ -58,6 +58,7 @@ ServerEvents.recipes(e => {
     slabNstairs('minecraft:sand', 'sand')
     slabNstairs('minecraft:red_sand', 'red_sand')
     slabNstairs('minecraft:pale_moss_block', 'pale_moss_block')
+    slabNstairs('minecraft:honeycomb_block', 'honeycomb_block')
     slabNstairs('minecraft:sculk', 'sculk')
     slabNstairs('minecraft:glass', 'glass')
     slabNstairs('minecraft:red_stained_glass', 'red_stained_glass')
@@ -157,11 +158,11 @@ ServerEvents.recipes(e => {
     //Vault Component
     e.shapeless('create_sa:vault_component', ['create:item_vault', 'minecraft:tripwire_hook'])
     //Pale Oak Corner Trim
-    e.shaped('4x kubejs:pale_oak_corner_trim', ['A', 'A', 'A'], {
+    e.shaped('4x kubejs:pale_oak_corner_trim', ['A  ', 'A  ', 'AAA'], {
         A: 'minecraft:pale_oak_planks'
     })
     //Pale Oak Pillar Trim
-    e.shaped('4x kubejs:pale_oak_pillar_trim', ['A  ', 'A  ', 'AAA'], {
+    e.shaped('4x kubejs:pale_oak_pillar_trim', ['A', 'A', 'A'], {
         A: 'minecraft:pale_oak_planks'
     })
     //Pale Oak Bench
@@ -199,6 +200,34 @@ ServerEvents.recipes(e => {
         D: '#handcrafted:cushions'
     })
 
+    //Bedrock Breaker
+    e.custom({
+        "type": "minecraft:crafting_shaped", "category": "misc", "key": { "#": { "item": "minecraft:stick" }, "X": { "item": "minecraft:netherite_block" } },
+        "pattern": ["XXX", " # ", " # "],
+        "result": { "count": 1, "id": "bedrock_breaker:bedrock_breaker", "components": { "minecraft:max_damage": 900, "minecraft:custom_data": { "last_layer": false, "the_end": false } } }
+    })
+    //Mob Detector
+    e.shaped('entitydetectors:mob_detector', ["ABA", "CDC", "AEA"], {
+        A: 'minecraft:red_nether_bricks',
+        B: '#c:slimeballs',
+        C: 'minecraft:spider_eye',
+        D: '#c:gems/quartz',
+        E: '#c:dusts/redstone'
+    })
+    //Player Detector
+    e.shaped('entitydetectors:player_detector', ["ABA", "CDC", "ABA"], {
+        A: '#c:cobblestones',
+        B: '#c:dusts/redstone',
+        C: 'minecraft:spider_eye',
+        D: '#c:gems/quartz',
+    })
+    //Bundle
+    e.shaped('minecraft:bundle', ["A", "B"], {
+        A: 'minecraft:string',
+        B: 'minecraft:leather'
+    })
+    //Ink Sac
+    e.shapeless('minecraft:ink_sac', ['minecraft:black_dye', 'minecraft:leather'])
     /****************************** Lychee Crafts ******************************/
     //Pale Oak Heart
     e.custom({
@@ -238,5 +267,4 @@ ServerEvents.recipes(e => {
     strippedMushroom('minecraft:mushroom_stem', 'minecraft:stripped_mushroom_stem')
     strippedMushroom('minecraft:red_mushroom_block', 'minecraft:stripped_red_mushroom_block')
     strippedMushroom('minecraft:brown_mushroom_block', 'minecraft:stripped_brown_mushroom_block')
-
 })

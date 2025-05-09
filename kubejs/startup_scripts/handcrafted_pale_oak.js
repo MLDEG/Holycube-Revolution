@@ -115,7 +115,12 @@ StartupEvents.registry('block', r => {
 		.tag('minecraft:mineable/axe')
 		.tag('handcrafted:tables')
 		.tag('handcrafted:table_connectable');
-	r.create('pale_oak_table');
+	r.create('pale_oak_table')
+		.box(0, 12, 0, 16, 16, 16, true)
+		.box(12, 0, 12, 15, 12, 15, true)
+		.box(12, 0, 1, 15, 12, 4, true)
+		.box(1, 0, 1, 4, 12, 4, true)
+		.box(1, 0, 12, 4, 12, 15, true);
 
 	paleOakFancyBed = r.createCustom('handcrafted:pale_oak_fancy_bed', () => new FancyBedBlock(BlockBehaviour.ofFullCopy(Blocks.WHITE_BED).noOcclusion()))
 		.tag('minecraft:mineable/axe')

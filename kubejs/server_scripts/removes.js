@@ -90,7 +90,9 @@ ServerEvents.recipes(e => {
         'mapperbase:steel_plate',
         'mapperbase:rivet',
         'create_sa:vault_component_recipe',
-        'farmersdelight:integration/create/mixing/tomato_sauce_from_mixing'
+        'farmersdelight:integration/create/mixing/tomato_sauce_from_mixing',
+        'entitydetectors:mob_detector',
+        'entitydetectors:player_detector'
     ]
     removeId.forEach(C => { r(C) })
 })

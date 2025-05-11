@@ -17,6 +17,7 @@ ServerEvents.recipes(e => {
         e.custom({ "type": "create:filling", "ingredients": [{ "item": "create_vibrant_vaults:basic_shipping_container" }, { "type": "fluid_stack", "amount": 250, "fluid": "kubejs:" + dye }], "results": [{ "id": "create_vibrant_vaults:" + dye + "_basic_shipping_container" }] })
         e.custom({ "type": "create:filling", "ingredients": [{ "item": "create_vibrant_vaults:vertical_shipping_container" }, { "type": "fluid_stack", "amount": 250, "fluid": "kubejs:" + dye }], "results": [{ "id": "create_vibrant_vaults:" + dye + "_vertical_shipping_container" }] })
         e.custom({ "type": "create:filling", "ingredients": [{ "item": "create_vibrant_vaults:vertical_basic_shipping_container" }, { "type": "fluid_stack", "amount": 250, "fluid": "kubejs:" + dye }], "results": [{ "id": "create_vibrant_vaults:" + dye + "_vertical_basic_shipping_container" }] })
+        e.custom({ "type": "create:filling", "ingredients": [{ "item": "create:andesite_casing" }, { "type": "fluid_stack", "amount": 250, "fluid": "kubejs:" + dye }], "results": [{ "id": "create_extra_casing:" + dye + "_casing" }] })
     }
 
     var dye = ['red', 'orange', 'yellow', 'lime', 'green', 'cyan', 'light_blue', 'blue', 'purple', 'magenta', 'pink', 'white', 'light_gray', 'gray', 'black', 'brown']

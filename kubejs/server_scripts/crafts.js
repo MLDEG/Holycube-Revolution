@@ -228,6 +228,10 @@ ServerEvents.recipes(e => {
     })
     //Ink Sac
     e.shapeless('minecraft:ink_sac', ['minecraft:black_dye', 'minecraft:leather'])
+    //Tall Grass
+    e.shapeless('minecraft:tall_grass', '2x minecraft:short_grass')
+    //Large Fern
+    e.shapeless('minecraft:large_fern', '2x minecraft:fern')
     /****************************** Lychee Crafts ******************************/
     //Pale Oak Heart
     e.custom({

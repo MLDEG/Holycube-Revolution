@@ -679,7 +679,7 @@ element {
 
 element {
   interactable = true
-  source = Modpack version : 1.0.7
+  source = Modpack version : 1.0.8
   source_mode = direct
   shadow = true
   scale = 1.0

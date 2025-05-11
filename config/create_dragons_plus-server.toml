@@ -8,3 +8,9 @@
 	#.
 	#If Bulk Freezing should be enabled
 	enableBulkFreezing = true
+	#.
+	#If Bulk Sanding should be enabled
+	enableBulkSanding = true
+	#.
+	#If Bulk Ending should be enabled
+	enableBulkEnding = true

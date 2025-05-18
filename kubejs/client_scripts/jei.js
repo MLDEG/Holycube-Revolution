@@ -79,7 +79,11 @@ RecipeViewerEvents.removeEntries('item', (e) => {
         'kubejs:incomplete_ominous_bottle',
         'mapperbase:flatter_hammer',
         'mapperbase:reinforced_flatter_hammer',
-        'mapperbase:iron_plate'
+        'mapperbase:iron_plate',
+        'embellishcraft:smooth_sandstone_wall',
+        'embellishcraft:terracotta_stairs',
+        'embellishcraft:terracotta_wall',
+        'embellishcraft:smooth_red_sandstone_wall'
     ])
 });
 RecipeViewerEvents.addEntries('item', e => {

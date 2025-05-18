@@ -28,10 +28,6 @@ ServerEvents.recipes(e => {
     //Charcoal Block
     e.shapeless('9x minecraft:charcoal', 'kubejs:block_charcoal')
     e.shapeless('kubejs:block_charcoal', '9x minecraft:charcoal')
-    //pale moss
-    e.shaped('3x minecraft:pale_moss_carpet', ['AA '], {
-        A: 'minecraft:pale_moss_block'
-    })
     //Blazing Template
     e.shaped('create_dragons_plus:blaze_upgrade_smithing_template', ['BAB', 'BCB', 'BBB'], {
         A: 'minecraft:netherite_upgrade_smithing_template',
@@ -85,11 +81,6 @@ ServerEvents.recipes(e => {
     //Display Plate
     e.shapeless('handcrafted:wood_plate', 'displaydelight:food_plate')
     e.shapeless('displaydelight:food_plate', 'handcrafted:wood_plate')
-    //Stone Chaine
-    e.shaped('16x additionallanterns:stone_chain', ['A', 'B', 'A'], {
-        A: 'minecraft:stone',
-        B: 'minecraft:cobblestone'
-    })
     //Raw Burger Bun
     e.shapeless('someassemblyrequired:raw_burger_bun', ['farmersdelight:wheat_dough', '#c:seeds'])
     //Diamond Sand Paper
@@ -232,43 +223,89 @@ ServerEvents.recipes(e => {
     e.shapeless('minecraft:tall_grass', '2x minecraft:short_grass')
     //Large Fern
     e.shapeless('minecraft:large_fern', '2x minecraft:fern')
-    /****************************** Lychee Crafts ******************************/
-    //Pale Oak Heart
-    e.custom({
-        "type": "lychee:block_interacting",
-        "item_in": { "tag": "c:tools/knife" },
-        "block_in": "kubejs:pale_oak_heart",
-        "post": [
-            { "type": "drop_item", "id": "minecraft:resin_clump" },
-            { "type": "damage_item" },
-            { "type": "place", "block": "kubejs:empty_pale_oak_heart", "if": { "type": "chance", "chance": 0.1 } }
-        ]
-    })
-    //Wildflowers
-    e.custom({
-        "type": "lychee:block_interacting",
-        "item_in": { "item": "minecraft:yellow_dye" },
-        "block_in": "minecraft:pink_petals",
-        "post": [{ "type": "place", "block": "minecraft:wildflowers" }]
-    })
-    function dupBoneMeal(item, block) {
-        e.custom({
-            "type": "lychee:block_interacting",
-            "item_in": { "item": "minecraft:bone_meal" },
-            "block_in": block,
-            "post": [{ "type": "drop_item", "id": item }]
-        })
+    //Copper Unoxidation
+    function unoxidation(clean, exposed, weathered, oxidized) {
+        e.stonecutting(weathered, oxidized)
+        e.stonecutting(exposed, weathered)
+        e.stonecutting(clean, exposed)
     }
-    dupBoneMeal('endersdelight:amberveil', 'endersdelight:amberveil_mushroom')
-    dupBoneMeal('endersdelight:chorusflame', 'endersdelight:chorusflame_bush')
-    dupBoneMeal('endersdelight:ethereal_saffron', 'endersdelight:ethereal_saffron_bush')
-    dupBoneMeal('endersdelight:voidpepper', 'endersdelight:voidpepper_bush')
-    dupBoneMeal('minecraft:torchflower', 'minecraft:torchflower')
-    dupBoneMeal('minecraft:pitcher_plant', 'minecraft:pitcher_plant')
+    unoxidation('minecraft:copper_block', 'minecraft:exposed_copper', 'minecraft:weathered_copper', 'minecraft:oxidized_copper')
+    unoxidation('minecraft:chiseled_copper', 'minecraft:exposed_chiseled_copper', 'minecraft:weathered_chiseled_copper', 'minecraft:oxidized_chiseled_copper')
+    unoxidation('minecraft:copper_grate', 'minecraft:exposed_copper_grate', 'minecraft:weathered_copper_grate', 'minecraft:oxidized_copper_grate')
+    unoxidation('minecraft:cut_copper', 'minecraft:exposed_cut_copper', 'minecraft:weathered_cut_copper', 'minecraft:oxidized_cut_copper')
+    unoxidation('minecraft:cut_copper_stairs', 'minecraft:exposed_cut_copper_stairs', 'minecraft:weathered_cut_copper_stairs', 'minecraft:oxidized_cut_copper_stairs')
+    unoxidation('minecraft:cut_copper_slab', 'minecraft:exposed_cut_copper_slab', 'minecraft:weathered_cut_copper_slab', 'minecraft:oxidized_cut_copper_slab')
+    unoxidation('minecraft:copper_door', 'minecraft:exposed_copper_door', 'minecraft:weathered_copper_door', 'minecraft:oxidized_copper_door')
+    unoxidation('minecraft:copper_trapdoor', 'minecraft:exposed_copper_trapdoor', 'minecraft:weathered_copper_trapdoor', 'minecraft:oxidized_copper_trapdoor')
+    unoxidation('minecraft:copper_bulb', 'minecraft:exposed_copper_bulb', 'minecraft:weathered_copper_bulb', 'minecraft:oxidized_copper_bulb')
+    unoxidation('create:copper_shingle_slab', 'create:exposed_copper_shingle_slab', 'create:weathered_copper_shingle_slab', 'create:oxidized_copper_shingle_slab')
+    unoxidation('create:copper_shingle_stairs', 'create:exposed_copper_shingle_stairs', 'create:weathered_copper_shingle_stairs', 'create:oxidized_copper_shingle_stairs')
+    unoxidation('create:copper_tiles', 'create:exposed_copper_tiles', 'create:weathered_copper_tiles', 'create:oxidized_copper_tiles')
+    unoxidation('create:copper_tile_slab', 'create:exposed_copper_tile_slab', 'create:weathered_copper_tile_slab', 'create:oxidized_copper_tile_slab')
+    unoxidation('create:copper_tile_stairs', 'create:exposed_copper_tile_stairs', 'create:weathered_copper_tile_stairs', 'create:oxidized_copper_tile_stairs')
+    unoxidation('additionallanterns:copper_chain', 'additionallanterns:exposed_copper_chain', 'additionallanterns:weathered_copper_chain', 'additionallanterns:oxidized_copper_chain')
 
-    //Stripped Mushroom Block
-    function strippedMushroom(blockIn, blockOut) { e.custom({ "type": "lychee:block_interacting", "item_in": { "tag": "minecraft:axes" }, "block_in": blockIn, "post": [{ "type": "place", "block": blockOut }, { "type": "damage_item" }] }) }
-    strippedMushroom('minecraft:mushroom_stem', 'minecraft:stripped_mushroom_stem')
-    strippedMushroom('minecraft:red_mushroom_block', 'minecraft:stripped_red_mushroom_block')
-    strippedMushroom('minecraft:brown_mushroom_block', 'minecraft:stripped_brown_mushroom_block')
+    //Chain crafts
+    function chains(material, output, count) { e.shaped(count + 'x ' + output, ["A", "B", "A"], { A: material, B: 'minecraft:chain', }) }
+    chains('minecraft:amethyst_shard', 'additionallanterns:amethyst_chain', 8)
+    chains('minecraft:andesite', 'additionallanterns:andesite_chain', 16)
+    chains('minecraft:basalt', 'additionallanterns:basalt_chain', 16)
+    chains('minecraft:blackstone', 'additionallanterns:blackstone_chain', 16)
+    chains('minecraft:cobblestone', 'additionallanterns:cobblestone_chain', 16)
+    chains('minecraft:cobbled_deepslate', 'additionallanterns:cobbled_deepslate_chain', 16)
+    chains('minecraft:sandstone', 'additionallanterns:normal_sandstone_chain', 16)
+    chains('minecraft:obsidian', 'additionallanterns:obsidian_chain', 16)
+    chains('minecraft:red_sandstone', 'additionallanterns:red_sandstone_chain', 16)
+    chains('minecraft:smooth_stone', 'additionallanterns:smooth_stone_chain', 16)
+    chains('minecraft:end_stone', 'additionallanterns:end_stone_chain', 16)
+    chains('minecraft:granite', 'additionallanterns:granite_chain', 16)
+    chains('minecraft:mossy_cobblestone', 'additionallanterns:mossy_cobblestone_chain', 16)
+    chains('minecraft:nether_brick', 'additionallanterns:normal_nether_bricks_chain', 16)
+    chains('minecraft:copper_ingot', 'additionallanterns:copper_chain', 16)
+    chains('minecraft:crimson_planks', 'additionallanterns:crimson_chain', 16)
+    chains('minecraft:deepslate_bricks', 'additionallanterns:deepslate_bricks_chain', 16)
+    chains('minecraft:diorite', 'additionallanterns:diorite_chain', 16)
+    chains('minecraft:stone', 'additionallanterns:stone_chain', 16)
+    chains('minecraft:stone_bricks', 'additionallanterns:stone_bricks_chain', 16)
+    chains('minecraft:warped_planks', 'additionallanterns:warped_chain', 16)
+    chains('minecraft:bone_block', 'additionallanterns:bone_chain', 8)
+    chains('minecraft:brick', 'additionallanterns:bricks_chain', 8)
+    chains('minecraft:dark_prismarine', 'additionallanterns:dark_prismarine_chain', 8)
+    chains('minecraft:prismarine_bricks', 'additionallanterns:prismarine_chain', 8)
+    chains('minecraft:purpur_block', 'additionallanterns:purpur_chain', 8)
+    chains('minecraft:quartz_block', 'additionallanterns:quartz_chain', 8)
+    chains('minecraft:red_nether_bricks', 'additionallanterns:red_nether_bricks_chain', 8)
+    chains('minecraft:gold_ingot', 'additionallanterns:gold_chain', 1)
+    chains('minecraft:diamond', 'additionallanterns:diamond_chain', 32)
+    chains('minecraft:emerald', 'additionallanterns:emerald_chain', 32)
+    chains('minecraft:netherite_ingot', 'additionallanterns:netherite_chain', 32)
+
+    //Table Another Furniture
+    function tableFurniture(wood) { e.shaped('3x another_furniture:' + wood + '_table', ["AAA", "B B"], { A: 'minecraft:' + wood + '_slab', B: 'minecraft:stick', }) }
+    var tableWood = ['dark_oak', 'acacia', 'warped', 'crimson', 'bamboo', 'cherry', 'mangrove', 'jungle', 'birch', 'oak', 'spruce']
+    tableWood.forEach(W => { tableFurniture(W) })
+    //Terracotta Plate
+    e.shaped('3x handcrafted:terracotta_plate', ["AAA"], {
+        A: 'bountifulblocks:terracotta_slab'
+    })
+    //Polished Terracotta
+    e.shaped('embellishcraft:polished_terracotta', ["A", "A"], {
+        A: 'bountifulblocks:terracotta_slab'
+    })
+    //Terracotta Thin Pot
+    e.shaped('3x handcrafted:terracotta_thin_pot', ["AA", "AA"], {
+        A: 'embellishcraft:terracotta_slab'
+    })
+    //Carved Bamboo Planks
+    e.shaped('bountifulblocks:carved_bamboo_planks', ["A", "A"], {
+        A: 'minecraft:bamboo_mosaic_slab'
+    })
+    //Red Sandstone Stairs
+    e.shaped('4x minecraft:red_sandstone_stairs', ["A  ", "AA ", "AAA"], {
+        A: 'minecraft:red_sandstone'
+    })
+    //Sandstone Stairs
+    e.shaped('4x minecraft:sandstone_stairs', ["A  ", "AA ", "AAA"], {
+        A: 'minecraft:sandstone'
+    })
 })

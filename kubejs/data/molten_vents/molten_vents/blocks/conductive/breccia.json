@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "create_d2d:breccia",
+    "molten_vents:dormant_molten_breccia",
+    "molten_vents:active_molten_breccia"
+  ]
+}

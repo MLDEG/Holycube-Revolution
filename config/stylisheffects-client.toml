@@ -1,0 +1,250 @@
+	[renderers.inventory_renderer]
+		#Prevent status effects with infinite duration from showing.
+		#Default Value: false
+		hide_infinite_effects = false
+		#Show a tooltip when hovering over an effect widget.
+		#Default Value: true
+		hovering_tooltip = true
+		#Minimum screen border distance for effect widgets.
+		#Default Value: 3
+		# Default: 3
+		# Range: > 0
+		screen_border_distance = 3
+		#Show remaining status effect duration on tooltip.
+		#Default Value: true
+		tooltip_duration = false
+		#Maximum amount of status effects rendered in a single row.
+		#Default Value: 5
+		# Default: 5
+		# Range: 1 ~ 255
+		max_columns = 5
+		#Space between individual effect widgets on y-axis.
+		#Default Value: 1
+		# Default: 1
+		# Range: > 0
+		widget_space_y = 1
+		#Alpha value for effect widgets.
+		#Default Value: 1.0
+		# Default: 1.0
+		# Range: 0.0 ~ 1.0
+		widget_alpha = 1.0
+		#Space between individual effect widgets on x-axis.
+		#Default Value: 1
+		# Default: 1
+		# Range: > 0
+		widget_space_x = 1
+		#Custom scale for effect renderer.
+		#Default Value: 4.0
+		# Default: 4.0
+		# Range: 1.0 ~ 12.0
+		scale = 4.0
+		#Respect vanilla's "hideParticles" flag which prevents a status effect from showing when set via commands.
+		#Default Value: false
+		respect_hide_particles = false
+		#Exclude certain menus from showing active status effects. Useful when effect icons overlap with other screen elements.
+		#Default Value: [curios:curios_container, tconstruct:*, mekanism:*]
+		menu_blacklist = ["curios:curios_container", "tconstruct:*", "sophisticatedbackpacks:*"]
+		#Maximum amount of status effects rendered in a single column.
+		#Default Value: 255
+		# Default: 255
+		# Range: 1 ~ 255
+		max_rows = 255
+		#Print menu type to game chat whenever a new menu screen is opened. Only intended to find menu types to be added to "menu_blacklist".
+		#Default Value: false
+		debug_container_types = false
+		#Render active status effects in every menu screen, not just in the player inventory.
+		#Default Value: true
+		effects_everywhere = true
+		#Allow effect renderer to fall back to a more compact version (when available) if not enough screen space exists. Otherwise effect widgets might run off-screen.
+		#Default Value: true
+		allow_fallback = true
+		#Screen side to render status effects on.
+		#Default Value: LEFT
+		#Allowed Values: LEFT, RIGHT
+		screen_side = "RIGHT"
+		#Effect renderer to be used.
+		#This setting might not be respected when not enough screen space is available. To force this setting disable "allow_fallback".
+		#Default Value: gui_compact_widget
+		#Allowed Values: NONE, GUI_SMALL, GUI_COMPACT, INVENTORY_COMPACT, INVENTORY_FULL_SIZE
+		renderer_type = "GUI_SMALL"
+
+	[renderers.gui_renderer]
+		#Prevent status effects with infinite duration from showing.
+		#Default Value: false
+		hide_infinite_effects = false
+		#Maximum amount of status effects rendered in a single row.
+		#Default Value: 5
+		# Default: 5
+		# Range: 1 ~ 255
+		max_columns = 5
+		#Space between individual effect widgets on y-axis.
+		#Default Value: 1
+		# Default: 1
+		# Range: > 0
+		widget_space_y = 1
+		#Alpha value for effect widgets.
+		#Default Value: 0.85
+		# Default: 0.85
+		# Range: 0.0 ~ 1.0
+		widget_alpha = 0.85
+		#Space between individual effect widgets on x-axis.
+		#Default Value: 1
+		# Default: 1
+		# Range: > 0
+		widget_space_x = 1
+		#Custom scale for effect renderer.
+		#Default Value: 4.0
+		# Default: 4.0
+		# Range: 1.0 ~ 12.0
+		scale = 4.0
+		#Respect vanilla's "hideParticles" flag which prevents a status effect from showing when set via commands.
+		#Default Value: true
+		respect_hide_particles = true
+		#Maximum amount of status effects rendered in a single column.
+		#Default Value: 255
+		# Default: 255
+		# Range: 1 ~ 255
+		max_rows = 255
+		#Allow effect renderer to fall back to a more compact version (when available) if not enough screen space exists. Otherwise effect widgets might run off-screen.
+		#Default Value: false
+		allow_fallback = false
+		#Screen side to render status effects on.
+		#Default Value: RIGHT
+		#Allowed Values: LEFT, RIGHT
+		screen_side = "LEFT"
+		#Offset on x-axis.
+		#Default Value: 3
+		# Default: 3
+		# Range: > 0
+		offset_x = 27
+		#Effect renderer to be used.
+		#This setting might not be respected when not enough screen space is available. To force this setting disable "allow_fallback".
+		#Default Value: gui_compact_widget
+		#Allowed Values: NONE, GUI_SMALL, GUI_COMPACT, INVENTORY_COMPACT, INVENTORY_FULL_SIZE
+		renderer_type = "GUI_SMALL"
+		#Offset on y-axis.
+		#Default Value: 3
+		# Default: 3
+		# Range: > 0
+		offset_y = 3
+
+	[widgets.inventory_compact]
+		#Effect amplifier color. Setting this to "EFFECT" will use potion color.
+		#Default Value: WHITE
+		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		amplifier_color = "WHITE"
+		#Should the effect icon start to blink when the effect is running out.
+		#Default Value: true
+		blinking_alpha = true
+		#Should effect widgets have a blue or red border depening on if they are beneficial or not.
+		#Default Value: false
+		quality_border = false
+		#Hide infinite symbol shown for an effect duration that is too long to fit.
+		#Default Value: false
+		hide_infinite_duration = false
+		#Show duration for ambient effects.
+		#Default Value: false
+		ambient_duration = false
+		#Display effect duration more compact, allows for always showing duration, even when it is very long.
+		#Default Value: false
+		compact_duration = false
+		#Top corner to draw effect amplifier in, or none.
+		#Default Value: TOP_RIGHT
+		#Allowed Values: NONE, TOP_LEFT, TOP_RIGHT
+		effect_amplifier = "TOP_RIGHT"
+		#Should ambient effect widgets have a cyan colored border.
+		#Default Value: true
+		ambient_border = true
+		#Effect duration color. Setting this to "EFFECT" will use potion color.
+		#Default Value: GRAY
+		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		duration_color = "GRAY"
+
+	[widgets.inventory_full_size]
+		#Should the effect icon start to blink when the effect is running out.
+		#Default Value: true
+		blinking_alpha = true
+		#Should effect widgets have a blue or red border depening on if they are beneficial or not.
+		#Default Value: false
+		quality_border = false
+		#Effect name color. Setting this to "EFFECT" will use potion color.
+		#Default Value: WHITE
+		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		name_color = "WHITE"
+		#Show duration for ambient effects.
+		#Default Value: true
+		ambient_duration = true
+		#Should ambient effect widgets have a cyan colored border.
+		#Default Value: true
+		ambient_border = true
+		#Effect duration color. Setting this to "EFFECT" will use potion color.
+		#Default Value: GRAY
+		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		duration_color = "GRAY"
+
+	[widgets.gui_small]
+		#Effect amplifier color. Setting this to "EFFECT" will use potion color.
+		#Default Value: WHITE
+		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		amplifier_color = "WHITE"
+		#Should the effect icon start to blink when the effect is running out.
+		#Default Value: true
+		blinking_alpha = true
+		#Should effect widgets have a blue or red border depening on if they are beneficial or not.
+		#Default Value: false
+		quality_border = false
+		#Hide infinite symbol shown for an effect duration that is too long to fit.
+		#Default Value: false
+		hide_infinite_duration = false
+		#Show duration for ambient effects.
+		#Default Value: false
+		ambient_duration = true
+		#Top corner to draw effect amplifier in, or none.
+		#Default Value: TOP_RIGHT
+		#Allowed Values: NONE, TOP_LEFT, TOP_RIGHT
+		effect_amplifier = "TOP_RIGHT"
+		#Should ambient effect widgets have a cyan colored border.
+		#Default Value: true
+		ambient_border = true
+		#Draw harmful effects on a separate line from beneficial ones. This is turned on in vanilla.
+		#Default Value: false
+		separate_effects = false
+		#Effect duration color. Setting this to "EFFECT" will use potion color.
+		#Default Value: GRAY
+		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		duration_color = "GRAY"
+
+	[widgets.gui_compact]
+		#Effect amplifier color. Setting this to "EFFECT" will use potion color.
+		#Default Value: WHITE
+		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		amplifier_color = "WHITE"
+		#Should the effect icon start to blink when the effect is running out.
+		#Default Value: true
+		blinking_alpha = true
+		#Display effect duration more compact, allows for always showing duration, even when it is very long.
+		#Default Value: false
+		compact_duration = false
+		#Should effect widgets have a blue or red border depening on if they are beneficial or not.
+		#Default Value: false
+		quality_border = false
+		#Hide infinite symbol shown for an effect duration that is too long to fit.
+		#Default Value: false
+		hide_infinite_duration = false
+		#Show duration for ambient effects.
+		#Default Value: false
+		ambient_duration = false
+		#Top corner to draw effect amplifier in, or none.
+		#Default Value: TOP_RIGHT
+		#Allowed Values: NONE, TOP_LEFT, TOP_RIGHT
+		effect_amplifier = "TOP_RIGHT"
+		#Should ambient effect widgets have a cyan colored border.
+		#Default Value: true
+		ambient_border = true
+		#Draw harmful effects on a separate line from beneficial ones. This is turned on in vanilla.
+		#Default Value: false
+		separate_effects = false
+		#Effect duration color. Setting this to "EFFECT" will use potion color.
+		#Default Value: GRAY
+		#Allowed Values: EFFECT, BLACK, DARK_BLUE, DARK_GREEN, DARK_AQUA, DARK_RED, DARK_PURPLE, GOLD, GRAY, DARK_GRAY, BLUE, GREEN, AQUA, RED, LIGHT_PURPLE, YELLOW, WHITE
+		duration_color = "GRAY"

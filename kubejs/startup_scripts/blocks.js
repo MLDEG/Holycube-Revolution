@@ -17,6 +17,25 @@ StartupEvents.registry("block", (e) => {
     function button(id, name, hard, sound) {
         e.create(id, "button").displayName(name).hardness(hard).soundType(sound)
     }
+    function polishedGlass(id, name, hard, sound) {
+        e.create('polished_glass/' + id + '_stained_glass').displayName("Polished " + name + " Stained Glass").hardness(hard).soundType(sound).defaultTranslucent().tagBlock(['supplementaries:brick_breakable_recursive', 'c:dyed', 'c:glass_blocks', 'c:glass_blocks/cheap', 'minecraft:impermeable']).tagItem(['c:dyed', 'c:glass_blocks', 'c:glass_blocks/cheap'])
+    }
+    polishedGlass("red", "Red", 0.3, "glass")
+    polishedGlass("orange", "Orange", 0.3, "glass")
+    polishedGlass("yellow", "Yellow", 0.3, "glass")
+    polishedGlass("lime", "Lime", 0.3, "glass")
+    polishedGlass("green", "Green", 0.3, "glass")
+    polishedGlass("blue", "Blue", 0.3, "glass")
+    polishedGlass("cyan", "Cyan", 0.3, "glass")
+    polishedGlass("light_blue", "Light Blue", 0.3, "glass")
+    polishedGlass("pink", "Pink", 0.3, "glass")
+    polishedGlass("magenta", "Magenta", 0.3, "glass")
+    polishedGlass("purple", "Purple", 0.3, "glass")
+    polishedGlass("brown", "Brown", 0.3, "glass")
+    polishedGlass("black", "Black", 0.3, "glass")
+    polishedGlass("gray", "Gray", 0.3, "glass")
+    polishedGlass("light_gray", "Light Gray", 0.3, "glass")
+    polishedGlass("white", "White", 0.3, "glass")
     block('polished_rose_quartz_block', 'Polish rose Quartz Block', 5.0, 'metal', 'pickaxe')
     block('creamy_terracotta', 'Creamy Terracotta', 1.25, 'stone', 'pickaxe')
     block('minecraft:stripped_mushroom_stem', 'Stripped Mushroom Stem', 0.2, 'wood', 'axe')

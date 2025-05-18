@@ -92,7 +92,31 @@ ServerEvents.recipes(e => {
         'create_sa:vault_component_recipe',
         'farmersdelight:integration/create/mixing/tomato_sauce_from_mixing',
         'entitydetectors:mob_detector',
-        'entitydetectors:player_detector'
+        'entitydetectors:player_detector',
+        /additionallanterns:.+_chain/,
+        'handcrafted:terracotta_plate',
+        'embellishcraft:polished_terracotta',
+        /another_furniture:.+_table/,
+        'embellishcraft:smooth_sandstone_wall',
+        'embellishcraft:terracotta_stairs',
+        'embellishcraft:terracotta_wall',
+        'embellishcraft:smooth_red_sandstone_wall',
+        'minecraft:smooth_sandstone_wall_from_smooth_sandstone_stonecutting',
+        'minecraft:terracotta_stairs_from_terracotta_stonecutting',
+        'minecraft:terracotta_wall_from_terracotta_stonecutting',
+        'minecraft:smooth_red_sandstone_wall_from_smooth_red_sandstone_stonecutting',
+        'handcrafted:terracotta_thin_pot',
+        'bountifulblocks:carved/carved_bamboo_planks',
+        'bountifulblocks:polished/polished_end_stone',
+        'minecraft:red_sandstone_stairs',
+        'minecraft:sandstone_stairs',
+        'supplementaries:stone_tile',
+        'supplementaries:blackstone_tile',
+        'bountifulblocks:bricks/red_sandstone_bricks',
+        'bountifulblocks:bricks/sandstone_bricks',
+        'bountifulblocks:bricks/andesite_bricks',
+        'bountifulblocks:bricks/diorite_bricks',
+        'bountifulblocks:bricks/granite_bricks'
     ]
     removeId.forEach(C => { r(C) })
 })

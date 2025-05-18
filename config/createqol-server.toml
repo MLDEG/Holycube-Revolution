@@ -28,6 +28,12 @@
 	#.
 	#Should the op players be warned about experimental features
 	experimentalWarning = true
+	#.
+	#Define if players can add elytra to their shadow radiance chestplate
+	elytraAllowed = true
+	#.
+	#Define if players can use air in the chestplate to boost the elytra
+	elytraBoostAllowed = true
 
 		#.
 		#.

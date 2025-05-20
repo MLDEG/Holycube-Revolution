@@ -50,3 +50,10 @@ ServerEvents.tags('block', e => {
     var dye = ['red', 'orange', 'yellow', 'lime', 'green', 'cyan', 'light_blue', 'blue', 'purple', 'magenta', 'pink', 'white', 'light_gray', 'gray', 'black', 'brown']
     dye.forEach(D => { tagGlassDye(D) })
 })
+//FLUID TAGS
+ServerEvents.tags('fluid', e => {
+    function dyesFluid(color) { e.add('c:dyes/' + color, 'kubejs:' + color) }
+    var dye = ['red', 'orange', 'yellow', 'lime', 'green', 'cyan', 'light_blue', 'blue', 'purple', 'magenta', 'pink', 'white', 'light_gray', 'gray', 'black', 'brown']
+    dye.forEach(D => { dyesFluid(D) })
+
+})

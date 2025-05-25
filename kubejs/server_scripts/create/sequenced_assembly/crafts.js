@@ -83,31 +83,6 @@ ServerEvents.recipes(e => {
             "transitional_item": { "id": "kubejs:incomplete_pale_oak_heart" }
         }
     )
-    //Raw Steel
-    e.custom(
-        {
-            "type": "create:sequenced_assembly",
-            "ingredient": { "item": "mapperbase:pig_iron_chunk" },
-            "loops": 1,
-            "results": [{ "id": "mapperbase:raw_steel" }],
-            "sequence": [
-                { "type": "create:pressing", "ingredients": [{ "item": "mapperbase:pig_iron_chunk" }], "results": [{ "id": "mapperbase:pig_iron_chunk" }] },
-                {
-                    "type": "create:deploying",
-                    "ingredients": [{ "item": "mapperbase:pig_iron_chunk" }, { "item": "mapperbase:pig_iron_chunk" }],
-                    "results": [{ "id": "mapperbase:pig_iron_chunk" }]
-                },
-                { "type": "create:pressing", "ingredients": [{ "item": "mapperbase:pig_iron_chunk" }], "results": [{ "id": "mapperbase:pig_iron_chunk" }] },
-                {
-                    "type": "create:deploying",
-                    "ingredients": [{ "item": "mapperbase:pig_iron_chunk" }, { "item": "mapperbase:pig_iron_chunk" }],
-                    "results": [{ "id": "mapperbase:pig_iron_chunk" }]
-                },
-                { "type": "create:pressing", "ingredients": [{ "item": "mapperbase:pig_iron_chunk" }], "results": [{ "id": "mapperbase:pig_iron_chunk" }] }
-            ],
-            "transitional_item": { "id": "mapperbase:pig_iron_chunk" }
-        }
-    )
     //Blaze Rod
     e.custom(
         {

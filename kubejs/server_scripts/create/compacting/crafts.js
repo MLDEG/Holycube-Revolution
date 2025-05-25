@@ -9,6 +9,4 @@ ServerEvents.recipes(e => {
     e.custom({ "type": "create:compacting", "ingredients": [{ "item": "minecraft:blackstone" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }, { "item": "minecraft:gold_nugget" }], "results": [{ "id": "minecraft:gilded_blackstone" }] })
     //Lapis Lazuli
     e.custom({ "type": "create:compacting", "ingredients": [{ "item": "minecraft:amethyst_shard" }, { "item": "create:experience_nugget" }, { "item": "create:experience_nugget" }, { "item": "create:experience_nugget" }, { "item": "create:experience_nugget" }], "results": [{ "id": "minecraft:lapis_lazuli" }] })
-    //Steel
-    e.custom({ "type": "create:compacting", "heat_requirement": "superheated", "ingredients": [{ "item": "minecraft:iron_ingot" }, { "item": "minecraft:charcoal" }], "results": [{ "id": "mapperbase:pig_iron_chunk" }] })
 })

@@ -5,9 +5,6 @@
 	#Define if the shadow radiance helmet has goggles
 	helmetHaveGoggles = true
 	#.
-	#Define if players can add propellers to their shadow radiance chestplate
-	propellersAllowed = false
-	#.
 	#Define if players can activate the hover mode with their shadow radiance chestplate
 	hoverAllowed = false
 	#.
@@ -34,6 +31,17 @@
 	#.
 	#Define if players can use air in the chestplate to boost the elytra
 	elytraBoostAllowed = true
+	#.
+	#Define if players can add a propeller to their shadow radiance chestplate
+	propellerAllowed = false
+	#.
+	#Define if the elytra boost must use fireworks instead of air (the elytra boost must be enabled)
+	useFireworksForBoost = true
+	#.
+	#Define the time (in ticks) between the consumption of fireworks for the boost (the usage of fireworks for the boost must be enabled)
+	# Default: 40
+	# Range: > 1
+	fireworkDuration = 40
 
 		#.
 		#.

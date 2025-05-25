@@ -2,3 +2,7 @@
 [common]
 	#When true, orestone blocks will only replace liquid source blocks. This means that you will require a constant supply of liquid to generate orestones. Default: true
 	useLiquid = true
+	#Whether or not to generate molten vents on land. Default: true
+	generateLandVents = true
+	#Whether or not to generate molten vents underwater. Default: true
+	generateUnderwaterVents = true

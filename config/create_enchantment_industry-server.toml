@@ -130,6 +130,19 @@
 		#.
 		#Whether the Printer denylist prevents Enchanted Books from being copied.Setting this to false allows copying Enchanted Books without denied enchantments
 		printingEnchantedBookDenylistStopCopying = true
+		#.
+		#Whether the Experience Lantern will pull in experience orbs from nearby.
+		experienceLanternPullToggle = true
+		#.
+		#The range at which experience orbs will be pulled into the lantern.
+		# Default: 10
+		# Range: > 0
+		experienceLanternPullRadius = 10
+		#.
+		#Modifier for the amount of force with which to pull the experience orbs.
+		# Default: 0.07500000298023224
+		# Range: 0.0 ~ 0.5
+		experienceLanternPullForceMultiplier = 0.07500000298023224
 
 	#.
 	#Parameters and abilities of enchantment operating components

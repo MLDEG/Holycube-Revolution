@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "create_d2d:dolomite",
+        "molten_vents:dormant_molten_dolomite",
+        "molten_vents:active_molten_dolomite"
+    ]
+}

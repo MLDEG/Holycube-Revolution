@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "create_d2d:gabbro",
+        "molten_vents:dormant_molten_gabbro",
+        "molten_vents:active_molten_gabbro"
+    ]
+}

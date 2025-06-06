@@ -51,3 +51,7 @@
 	[createrailwaysnavigator_common_config.experimental]
 		#The new simulation algorithm calculates the times step by step for the respective stations and pays attention to the schedule conditions instead of adding up the total journey time until the desired time is reached. This should lead to more precise results, especially when using time based departure times. (Default: OFF)
 		use_new_simulation_algorithm = false
+
+	[createrailwaysnavigator_common_config.advanced_display]
+		#Automatically changes the display type when a display link is connected, depending on what should be displayed. (Default: ON)
+		auto_change_display_type = true

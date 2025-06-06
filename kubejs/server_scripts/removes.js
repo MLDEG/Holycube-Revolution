@@ -116,7 +116,10 @@ ServerEvents.recipes(e => {
         'bountifulblocks:bricks/sandstone_bricks',
         'bountifulblocks:bricks/andesite_bricks',
         'bountifulblocks:bricks/diorite_bricks',
-        'bountifulblocks:bricks/granite_bricks'
+        'bountifulblocks:bricks/granite_bricks',
+        'dndecor:splashing/weathered_limestone',
+        /dndecor:(dolomite|gabbro|weathered_limestone|blackstone|basalt|netherrack|amethyst|packed_mud|stone|polished|layered|cut|small)/,
+        /dndecor:crafting\/.+_(crushing_wheel|millstone)/,
     ]
     removeId.forEach(C => { r(C) })
 })

@@ -83,12 +83,31 @@ RecipeViewerEvents.removeEntries('item', (e) => {
         'embellishcraft:smooth_sandstone_wall',
         'embellishcraft:terracotta_stairs',
         'embellishcraft:terracotta_wall',
-        'embellishcraft:smooth_red_sandstone_wall'
+        'embellishcraft:smooth_red_sandstone_wall',
+        /dndecor:(layered|small_|cut|polished|dolomite|gabbro|weathered|blackstone|basalt|netherrack|amethyst|packed|stone)/
     ])
 });
 RecipeViewerEvents.addEntries('item', e => {
     e.add('bedrock_breaker:bedrock_breaker');
     e.add('minecraft:bundle');
+    e.add('dndecor:dolomite_crushing_wheel');
+    e.add('dndecor:dolomite_millstone');
+    e.add('dndecor:blackstone_crushing_wheel');
+    e.add('dndecor:blackstone_millstone');
+    e.add('dndecor:amethyst_crushing_wheel');
+    e.add('dndecor:amethyst_millstone');
+    e.add('dndecor:gabbro_crushing_wheel');
+    e.add('dndecor:gabbro_millstone');
+    e.add('dndecor:basalt_crushing_wheel');
+    e.add('dndecor:basalt_millstone');
+    e.add('dndecor:packed_mud_crushing_wheel');
+    e.add('dndecor:packed_mud_millstone');
+    e.add('dndecor:weathered_limestone_crushing_wheel');
+    e.add('dndecor:weathered_limestone_millstone');
+    e.add('dndecor:netherrack_crushing_wheel');
+    e.add('dndecor:netherrack_millstone');
+    e.add('dndecor:stone_crushing_wheel');
+    e.add('dndecor:stone_millstone');
 })
 RecipeViewerEvents.removeEntries('fluid', (e) => {
     e.remove('create_d2d:sap',)

@@ -13,6 +13,7 @@
 &b    L'étalon du cube        
 &4&lAstuce: &r&4Les machines à TNT sont fugueuses
 &aSous les plumes, &6&lles abdos
+&c    Red Fraise > Eau de Framboise
 &6      C'est un gorille ?       
 &6   L'arbre qui cache la forêt    
 &aOn va faire un ptit chateau mon pépère
@@ -32,3 +33,6 @@
 &d       Le GANG        
 &6   HC &l"game drops"
 &6    Rendez le tatou
+&6    Jure à 18h
+&c    Eau de Framboise > Red Fraise
+&6    Dx

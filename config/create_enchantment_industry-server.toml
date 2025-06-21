@@ -113,7 +113,7 @@
 		#.
 		#If the changing package patterns function of Printers should be enabled.
 		#[@cui:RequiresReload:server]
-		enablePackagePatternPrinting = true
+		enablePackagePatternPrinting = false
 		#.
 		#If the assigning package addresses function of Printers should be enabled.
 		#[@cui:RequiresReload:server]

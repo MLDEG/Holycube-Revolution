@@ -1,5 +1,9 @@
 //ITEM TAGS
 ServerEvents.tags('item', e => {
+    e.add('chipped:stripped_pale_oak_log', 'minecraft:stripped_pale_oak_log')
+    e.add('chipped:pale_moss_block', 'minecraft:pale_moss_block')
+    e.add('chipped:pale_oak_door', 'minecraft:pale_oak_door')
+    e.add('chipped:pale_oak_trapdoor', 'minecraft:pale_oak_trapdoor')
     e.add('c:storage_blocks', ['kubejs:polished_rose_quartz_block'])
     e.add('c:storage_blocks/polished_rose_quartz', ['kubejs:polished_rose_quartz_block'])
     e.add('minecraft:beacon_payment_items', ['create:polished_rose_quartz'])
@@ -39,6 +43,7 @@ ServerEvents.tags('item', e => {
 })
 //BLOCK TAGS
 ServerEvents.tags('block', e => {
+    e.add('minecraft:dirt', /chipped:.+_moss_block/)
     e.add('supplementaries:brick_breakable_recursive', /(kubejs|chipped):(.+)?glass(.+)?/)
     e.add('minecraft:beacon_base_blocks', ['kubejs:polished_rose_quartz_block'])
     e.add('create:wrench_pickup', ['supplementaries:faucet', 'trashcans:liquid_trash_can', 'trashcans:ultimate_trash_can', 'trashcans:energy_trash_can', 'trashcans:item_trash_can', 'holycube_additions_yassou:iron_lever', 'minecraft:brewing_stand', 'minecraft:stonecutter', 'minecraft:crafter', 'minecraft:fletching_table', 'minecraft:cartography_table', 'minecraft:smithing_table', 'minecraft:grindstone', 'minecraft:loom', 'minecraft:anvil', 'minecraft:chipped_anvil', 'minecraft:composter', 'minecraft:damaged_anvil', 'holycube_additions_yassou:industrial_blue_lever', 'holycube_additions_yassou:industrial_green_lever', 'holycube_additions_yassou:industrial_yellow_lever', 'holycube_additions_yassou:industrial_red_lever', 'holycube_additions_yassou:valve', 'minecraft:beacon', 'minecraft:cauldron', 'easy_villagers:inventory_viewer', 'easy_villagers:incubator', 'easy_villagers:converter', 'easy_villagers:breeder', 'easy_villagers:auto_trader', 'easy_villagers:trader', 'easy_piglins:barterer', 'create_things_and_misc:brass_tiles', 'create_things_and_misc:brass_bricks', 'create_things_and_misc:brass_tiles_slab', 'create_things_and_misc:brass_tiles_stair', 'create_things_and_misc:brass_brick_slab', 'create_things_and_misc:brass_brick_stairs', 'create_things_and_misc:train_buffer', 'create_things_and_misc:sturdy_sheet_slab_stairs', 'create_things_and_misc:sturdy_sheet_slab', 'create_things_and_misc:sturdy_sheet_block', 'create_things_and_misc:mangrove_sail', 'create_things_and_misc:crimson_sail', 'create_things_and_misc:oak_sail', 'create_things_and_misc:dark_oak_sail', 'create_things_and_misc:birch_sail', 'create_things_and_misc:cherry_sail', 'create_things_and_misc:jungle_sail', 'create_things_and_misc:spruce_sail', 'create_things_and_misc:bamboo_sail', 'create_things_and_misc:warped_sail', 'create_things_and_misc:acacia_sail', 'waterframes:tv_box', 'waterframes:big_tv', 'waterframes:tv', 'waterframes:projector', 'waterframes:frame', 'waystones:warp_plate'])
@@ -49,6 +54,8 @@ ServerEvents.tags('block', e => {
     }
     var dye = ['red', 'orange', 'yellow', 'lime', 'green', 'cyan', 'light_blue', 'blue', 'purple', 'magenta', 'pink', 'white', 'light_gray', 'gray', 'black', 'brown']
     dye.forEach(D => { tagGlassDye(D) })
+    e.add('create:crushing_wheels', ['dndecor:stone_crushing_wheel', 'dndecor:packed_mud_crushing_wheel', 'dndecor:amethyst_crushing_wheel', 'dndecor:netherrack_crushing_wheel', 'dndecor:basalt_crushing_wheel', 'dndecor:blackstone_crushing_wheel', 'dndecor:weathered_limestone_crushing_wheel', 'dndecor:gabbro_crushing_wheel', 'dndecor:dolomite_crushing_wheel', 'create:crushing_wheel', 'dndecor:veridium_crushing_wheel', 'dndecor:scorchia_crushing_wheel', 'dndecor:scoria_crushing_wheel', 'dndecor:ochrum_crushing_wheel', 'dndecor:limestone_crushing_wheel', 'dndecor:crimsite_crushing_wheel', 'dndecor:asurine_crushing_wheel', 'dndecor:tuff_crushing_wheel', 'dndecor:deepslate_crushing_wheel', 'dndecor:dripstone_crushing_wheel', 'dndecor:calcite_crushing_wheel', 'dndecor:diorite_crushing_wheel', 'dndecor:granite_crushing_wheel'])
+    e.add('create:millstones', ['dndecor:stone_millstone', 'dndecor:packed_mud_millstone', 'dndecor:amethyst_millstone', 'dndecor:netherrack_millstone', 'dndecor:basalt_millstone', 'dndecor:blackstone_millstone', 'dndecor:weathered_limestone_millstone', 'dndecor:gabbro_millstone', 'dndecor:dolomite_millstone', 'dndecor:veridium_millstone', 'dndecor:scorchia_millstone', 'dndecor:scoria_millstone', 'dndecor:ochrum_millstone', 'dndecor:limestone_millstone', 'dndecor:crimsite_millstone', 'dndecor:asurine_millstone', 'dndecor:tuff_millstone', 'dndecor:deepslate_millstone', 'dndecor:dripstone_millstone', 'dndecor:calcite_millstone', 'dndecor:diorite_millstone', 'dndecor:granite_millstone'])
 })
 //FLUID TAGS
 ServerEvents.tags('fluid', e => {

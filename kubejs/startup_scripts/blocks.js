@@ -171,4 +171,103 @@ StartupEvents.registry("block", (e) => {
     logChipped('planked_pale_oak_log', 'Planked Pale Oak Log')
     logChipped('reinforced_pale_oak_log', 'Reinforced Pale Oak Log')
 
+    //Stripped Pale Oak Log
+    function strippedLogChipped(id, name) {
+        e.create(id).displayName(name).hardness(2.0).soundType('wood').tagBlock(['minecraft:mineable/axe', 'minecraft:logs', 'chipped:stripped_pale_oak_log']).tag(['minecraft:logs', 'chipped:stripped_pale_oak_log']).property(BlockProperties.FACING).placementState(s => s.setValue(BlockProperties.FACING, s.clickedFace)).item(item => item.burnTime(300));
+    }
+    strippedLogChipped('carved_stripped_pale_oak_log', 'Carved Stripped Pale Oak Log')
+    strippedLogChipped('chipped_stripped_pale_oak_log', 'Chipped Stripped Pale Oak Log')
+    strippedLogChipped('d_sign_stripped_pale_oak_log', 'D Sign Stripped Pale Oak Log')
+    strippedLogChipped('edged_stripped_pale_oak_log', 'Edged Stripped Pale Oak Log')
+    strippedLogChipped('f_sign_stripped_pale_oak_log', 'F Sign Stripped Pale Oak Log')
+    strippedLogChipped('i_sign_stripped_pale_oak_log', 'I Sign Stripped Pale Oak Log')
+    strippedLogChipped('k_sign_stripped_pale_oak_log', 'K Sign Stripped Pale Oak Log')
+    strippedLogChipped('knotted_stripped_pale_oak_log', 'Knotted Stripped Pale Oak Log')
+    strippedLogChipped('l_sign_stripped_pale_oak_log', 'L Sign Stripped Pale Oak Log')
+    strippedLogChipped('layered_stripped_pale_oak_log', 'Layered Stripped Pale Oak Log')
+    strippedLogChipped('lumpy_stripped_pale_oak_log', 'Lumpty Stripped Pale Oak Log')
+    strippedLogChipped('m_sign_stripped_pale_oak_log', 'M Sign Stripped Pale Oak Log')
+    strippedLogChipped('patient_stripped_pale_oak_log', 'Patient Stripped Pale Oak Log')
+    strippedLogChipped('reinforced_stripped_pale_oak_log', 'Reinforced Stripped Pale Oak Log')
+    strippedLogChipped('sign_stripped_pale_oak_log', 'Sign Stripped Pale Oak Log')
+    strippedLogChipped('stern_stripped_pale_oak_log', 'Stern Stripped Pale Oak Log')
+    strippedLogChipped('wise_stripped_pale_oak_log', 'Wise Stripped Pale Oak Log')
+
+    //Pale Moss
+    function palemossChipped(id, name) {
+        e.create(id).displayName(name).hardness(0.1).soundType('moss').tagBlock(['minecraft:mineable/hoe', 'minecraft:dirt', 'chipped:pale_moss_block']).tag('chipped:pale_moss_block')
+    }
+    palemossChipped('pale_moss_block/blobby_pale_moss_block', 'Blobby Pale Moss Block')
+    palemossChipped('pale_moss_block/blue_pale_moss_block', 'Blue Pale Moss Block')
+    palemossChipped('pale_moss_block/crunchy_pale_moss_block', 'Crunchy Pale Moss Block')
+    palemossChipped('pale_moss_block/lime_pale_moss_block', 'Lime Pale Moss Block')
+    palemossChipped('pale_moss_block/old_pale_moss_block', 'Old Pale Moss Block')
+    palemossChipped('pale_moss_block/red_pale_moss_block', 'Red Pale Moss Block')
+    palemossChipped('pale_moss_block/smooth_pale_moss_block', 'Smooth Pale Moss Block')
+    palemossChipped('pale_moss_block/spongy_pale_moss_block', 'Spongy Pale Moss Block')
+    palemossChipped('pale_moss_block/sprinkled_pale_moss_block', 'Sprinkled Pale Moss Block')
+    palemossChipped('pale_moss_block/yellow_pale_moss_block', 'Yellow Pale Moss Block')
+    palemossChipped('pale_moss_block/purple_pale_moss_block', 'Purple Pale Moss Block')
+    palemossChipped('pale_moss_block/white_pale_moss_block', 'White Pale Moss Block')
+    palemossChipped('pale_moss_block/black_pale_moss_block', 'Black Pale Moss Block')
+
+    function doorChipped(id, name) {
+        e.create(id, "door").displayName(name).hardness(3.0).tagBlock(['minecraft:mineable/axe', 'minecraft:wooden_doors', 'chipped:pale_oak_door']).tag(['minecraft:wooden_doors', 'chipped:pale_oak_door'])
+    }
+    doorChipped('pale_oak_door/barred_pale_oak_door', 'Barred Pale Oak Door')
+    doorChipped('pale_oak_door/beach_pale_oak_door', 'Beach Pale Oak Door')
+    doorChipped('pale_oak_door/dual_paneled_pale_oak_door', 'Dual Paneled Pale Oak Door')
+    doorChipped('pale_oak_door/fortified_pale_oak_door', 'Fortified Pale Oak Door')
+    doorChipped('pale_oak_door/gated_pale_oak_door', 'Gated Pale Oak Door')
+    doorChipped('pale_oak_door/glass_pale_oak_door', 'Glass Pale Oak Door')
+    doorChipped('pale_oak_door/heavy_pale_oak_door', 'Heavy Pale Oak Door')
+    doorChipped('pale_oak_door/modern_pale_oak_door', 'Modern Pale Oak Door')
+    doorChipped('pale_oak_door/overgrown_pale_oak_door', 'Overgrown Pale Oak Door')
+    doorChipped('pale_oak_door/paneled_pale_oak_door', 'Paneled Pale Oak Door')
+    doorChipped('pale_oak_door/paper_pale_oak_door', 'Paper Pale Oak Door')
+    doorChipped('pale_oak_door/pressed_pale_oak_door', 'Pressed Pale Oak Door')
+    doorChipped('pale_oak_door/screen_pale_oak_door', 'Screen Pale Oak Door')
+    doorChipped('pale_oak_door/secret_pale_oak_door', 'Secret Pale Oak Door')
+    doorChipped('pale_oak_door/shack_pale_oak_door', 'Shack Pale Oak Door')
+    doorChipped('pale_oak_door/sliding_pale_oak_door', 'Sliding Pale Oak Door')
+    doorChipped('pale_oak_door/supported_pale_oak_door', 'Supported Pale Oak Door')
+    doorChipped('pale_oak_door/tile_windowed_pale_oak_door', 'Tile Windowed Pale Oak Door')
+    doorChipped('pale_oak_door/tiled_pale_oak_door', 'Tiled Pale Oak Door')
+    doorChipped('pale_oak_door/windowed_pale_oak_door', 'Windowed Pale Oak Door')
+
+    function trapdoorChipped(id, name) {
+        e.create(id, "trapdoor").displayName(name).hardness(3.0).tagBlock(['minecraft:mineable/axe', 'minecraft:wooden_trapdoors', 'chipped:pale_oak_trapdoor']).tag(['minecraft:wooden_trapdoors', 'chipped:pale_oak_trapdoor'])
+    }
+    trapdoorChipped('pale_oak_trapdoor/woven_pale_oak_trapdoor', 'Woven Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/windowed_pale_oak_trapdoor', 'Windowed Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/warted_pale_oak_trapdoor', 'Warted Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/vined_pale_oak_trapdoor', 'Vinted Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/twisted_pale_oak_trapdoor', 'Twisted Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/suspicious_pale_oak_trapdoor', 'Suspicious Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/solid_pale_oak_trapdoor', 'Solid Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/slotted_pale_oak_trapdoor', 'Slotted Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/screened_pale_oak_trapdoor', 'Screened Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/pointless_pale_oak_trapdoor', 'Pointless Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/overgrown_pale_oak_trapdoor', 'Overgrown Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/meshed_pale_oak_trapdoor', 'Meshed Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/leafy_pale_oak_trapdoor', 'Leafy Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/iron_barred_pale_oak_trapdoor', 'Iron Barred Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/golden_barred_pale_oak_trapdoor', 'Golden Barred Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/fancy_pale_oak_trapdoor', 'Fancy Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/distorted_pale_oak_trapdoor', 'Distorted Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/cobweb_pale_oak_trapdoor', 'Cobweb Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/classic_windowed_pale_oak_trapdoor', 'Classic Windowed Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/classic_pale_oak_trapdoor', 'Classic Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/checkered_pale_oak_trapdoor', 'Checkered Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/barred_pale_oak_trapdoor', 'Barred Pale Oak Trapdoor')
+    trapdoorChipped('pale_oak_trapdoor/airy_pale_oak_trapdoor', 'Airy Pale Oak Trapdoor')
+
+    //Moss
+    function mossChipped(id, name) {
+        e.create(id).displayName(name).hardness(0.1).soundType('moss').tagBlock(['minecraft:mineable/hoe', 'minecraft:dirt', 'chipped:moss_block']).tag('chipped:moss_block')
+    }
+    mossChipped('moss_block/purple_moss_block', 'Purple Moss Block')
+    mossChipped('moss_block/white_moss_block', 'White Moss Block')
+    mossChipped('moss_block/black_moss_block', 'Black Moss Block')
+
 })

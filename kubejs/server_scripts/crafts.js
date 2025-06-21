@@ -146,6 +146,10 @@ ServerEvents.recipes(e => {
     //Chipped Crafts
     e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_log" }] })
     e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_planks" }] })
+    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_moss_block" }] })
+    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_door" }] })
+    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:pale_oak_trapdoor" }] })
+    e.custom({ "type": "chipped:workbench", "ingredients": [{ "tag": "chipped:stripped_pale_oak_log" }] })
     //Vault Component
     e.shapeless('create_sa:vault_component', ['create:item_vault', 'minecraft:tripwire_hook'])
     //Pale Oak Corner Trim
@@ -308,4 +312,62 @@ ServerEvents.recipes(e => {
     e.shaped('4x minecraft:sandstone_stairs', ["A  ", "AA ", "AAA"], {
         A: 'minecraft:sandstone'
     })
+    //Service Bell
+    e.shaped('another_furniture:service_bell', ["A", "B"], {
+        A: 'minecraft:iron_nugget',
+        B: 'dndecor:iron_dot_bolt'
+    })
+    //Saddle Craft
+    e.shaped('minecraft:saddle', [" A ", "ABA"], {
+        A: 'minecraft:leather',
+        B: 'minecraft:iron_ingot'
+    })
+    //Netherite Portable Whistle
+    e.smithing('create_things_and_misc:netherite_portable_whistle', 'create_things_and_misc:portable_whistle', 'minecraft:netherite_ingot')
+    //Design n' Decor stuff
+    e.shapeless('dndecor:stone_millstone', ['minecraft:stone', '#c:create/millstones'])
+    e.shapeless('dndecor:packed_mud_millstone', ['minecraft:packed_mud', '#c:create/millstones'])
+    e.shapeless('dndecor:amethyst_millstone', ['minecraft:amethyst_block', '#c:create/millstones'])
+    e.shapeless('dndecor:netherrack_millstone', ['minecraft:netherrack', '#c:create/millstones'])
+    e.shapeless('dndecor:basalt_millstone', ['minecraft:basalt', '#c:create/millstones'])
+    e.shapeless('dndecor:blackstone_millstone', ['minecraft:blackstone', '#c:create/millstones'])
+    e.shapeless('dndecor:weathered_limestone_millstone', ['create_d2d:weathered_limestone', '#c:create/millstones'])
+    e.shapeless('dndecor:gabbro_millstone', ['create_d2d:gabbro', '#c:create/millstones'])
+    e.shapeless('dndecor:dolomite_millstone', ['create_d2d:dolomite', '#c:create/millstones'])
+    e.shapeless('dndecor:veridium_millstone', ['create:veridium', '#c:create/millstones'])
+    e.shapeless('dndecor:scorchia_millstone', ['create:scorchia', '#c:create/millstones'])
+    e.shapeless('dndecor:scoria_millstone', ['create:scoria', '#c:create/millstones'])
+    e.shapeless('dndecor:ochrum_millstone', ['create:ochrum', '#c:create/millstones'])
+    e.shapeless('dndecor:limestone_millstone', ['create:limestone', '#c:create/millstones'])
+    e.shapeless('dndecor:crimsite_millstone', ['create:crimsite', '#c:create/millstones'])
+    e.shapeless('dndecor:asurine_millstone', ['create:asurine', '#c:create/millstones'])
+    e.shapeless('dndecor:tuff_millstone', ['minecraft:tuff', '#c:create/millstones'])
+    e.shapeless('dndecor:deepslate_millstone', ['minecraft:deepslate', '#c:create/millstones'])
+    e.shapeless('dndecor:dripstone_millstone', ['minecraft:dripstone_block', '#c:create/millstones'])
+    e.shapeless('dndecor:calcite_millstone', ['minecraft:calcite', '#c:create/millstones'])
+    e.shapeless('dndecor:diorite_millstone', ['minecraft:diorite', '#c:create/millstones'])
+    e.shapeless('dndecor:granite_millstone', ['minecraft:granite', '#c:create/millstones'])
+    e.shapeless('dndecor:dolomite_crushing_wheel', ['create_d2d:dolomite', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:stone_crushing_wheel', ['minecraft:stone', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:packed_mud_crushing_wheel', ['minecraft:packed_mud', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:amethyst_crushing_wheel', ['minecraft:amethyst_block', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:netherrack_crushing_wheel', ['minecraft:netherrack', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:basalt_crushing_wheel', ['minecraft:basalt', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:blackstone_crushing_wheel', ['minecraft:blackstone', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:weathered_limestone_crushing_wheel', ['create_d2d:weathered_limestone', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:gabbro_crushing_wheel', ['create_d2d:gabbro', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:veridium_crushing_wheel', ['create:veridium', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:scorchia_crushing_wheel', ['create:scorchia', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:scoria_crushing_wheel', ['create:scoria', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:ochrum_crushing_wheel', ['create:ochrum', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:limestone_crushing_wheel', ['create:limestone', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:crimsite_crushing_wheel', ['create:crimsite', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:asurine_crushing_wheel', ['create:asurine', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:tuff_crushing_wheel', ['minecraft:tuff', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:deepslate_crushing_wheel', ['minecraft:deepslate', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:dripstone_crushing_wheel', ['minecraft:dripstone_block', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:calcite_crushing_wheel', ['minecraft:calcite', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:diorite_crushing_wheel', ['minecraft:diorite', '#c:create/crushing_wheels'])
+    e.shapeless('dndecor:granite_crushing_wheel', ['minecraft:granite', '#c:create/crushing_wheels'])
+
 })

@@ -322,6 +322,20 @@ ServerEvents.recipes(e => {
         A: 'minecraft:leather',
         B: 'minecraft:iron_ingot'
     })
+    //Dried Ghastling
+    e.shaped('happyghastmod:ghastling_incubator', ["AAA", "ABA", "AAA"], {
+        A: 'minecraft:ghast_tear',
+        B: 'minecraft:soul_sand'
+    })
+    //Winx Harness
+    e.shaped('happyghastmod:moddy_harness', ["AAA", "BCB", "DED"], {
+        A: 'minecraft:leather',
+        B: 'minecraft:glass',
+        C: 'minecraft:pink_wool',
+        D: 'minecraft:gold_nugget',
+        E: 'minecraft:magenta_wool'
+    })
+
     //Netherite Portable Whistle
     e.smithing('create_things_and_misc:netherite_portable_whistle', 'create_things_and_misc:portable_whistle', 'minecraft:netherite_ingot')
     //Design n' Decor stuff

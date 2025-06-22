@@ -1,0 +1,34 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "harness",
+    "key": {
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "W": {
+            "item": "minecraft:red_wool"
+        },
+        "B": {
+            "item": "minecraft:black_wool"
+        }
+    },
+    "pattern": [
+        "LLL",
+        "G G",
+        "WBW"
+    ],
+    "result": {
+        "id": "happyghastmod:black_harness",
+        "components": {
+            "minecraft:custom_data": {
+                "CustomHarnessId": "d8328d1b-d3b6-4e5a-8553-76e194cf6e41",
+                "HasCustomSaddleTexture": "1b"
+            },
+            "minecraft:custom_name": "\"MLDEG Harness\""
+        }
+    }
+}

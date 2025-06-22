@@ -7,6 +7,11 @@
 		# Default: 200
 		# Range: > -2147483648
 		cycleTime = 200
+		#.
+		#Output multiplier for brass extruder
+		# Default: 8
+		# Range: > -2147483648
+		brassOutputMultiplier = 8
 
 			#.
 			#Stress values

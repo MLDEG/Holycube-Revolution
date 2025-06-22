@@ -18,6 +18,10 @@ ServerEvents.recipes(e => {
         e.custom({ "type": "create:filling", "ingredients": [{ "item": "create_vibrant_vaults:vertical_shipping_container" }, { "type": "fluid_stack", "amount": 250, "fluid": "kubejs:" + dye }], "results": [{ "id": "create_vibrant_vaults:" + dye + "_vertical_shipping_container" }] })
         e.custom({ "type": "create:filling", "ingredients": [{ "item": "create_vibrant_vaults:vertical_basic_shipping_container" }, { "type": "fluid_stack", "amount": 250, "fluid": "kubejs:" + dye }], "results": [{ "id": "create_vibrant_vaults:" + dye + "_vertical_basic_shipping_container" }] })
         e.custom({ "type": "create:filling", "ingredients": [{ "item": "create:andesite_casing" }, { "type": "fluid_stack", "amount": 250, "fluid": "kubejs:" + dye }], "results": [{ "id": "create_extra_casing:" + dye + "_casing" }] })
+        e.custom({ "type": "create:filling", "ingredients": [{ "item": "create:bound_cardboard_block" }, { "type": "fluid_stack", "amount": 250, "fluid": "kubejs:" + dye }], "results": [{ "id": "createframed:bound_" + dye + "_cardboard_block" }] })
+        e.custom({ "type": "create:filling", "ingredients": [{ "item": "create:cardboard_block" }, { "type": "fluid_stack", "amount": 250, "fluid": "kubejs:" + dye }], "results": [{ "id": "createframed:" + dye + "_cardboard_block" }] })
+        e.custom({ "type": "create:filling", "ingredients": [{ "item": "createframed:cardboard_window" }, { "type": "fluid_stack", "amount": 250, "fluid": "kubejs:" + dye }], "results": [{ "id": "createframed:" + dye + "_cardboard_window" }] })
+        e.custom({ "type": "create:filling", "ingredients": [{ "item": "create:display_board" }, { "type": "fluid_stack", "amount": 50, "fluid": "kubejs:" + dye }], "results": [{ "id": "dndecor:" + dye + "_display_board" }] })
     }
 
     var dye = ['red', 'orange', 'yellow', 'lime', 'green', 'cyan', 'light_blue', 'blue', 'purple', 'magenta', 'pink', 'white', 'light_gray', 'gray', 'black', 'brown']

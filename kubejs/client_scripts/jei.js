@@ -84,7 +84,10 @@ RecipeViewerEvents.removeEntries('item', (e) => {
         'embellishcraft:terracotta_stairs',
         'embellishcraft:terracotta_wall',
         'embellishcraft:smooth_red_sandstone_wall',
-        /dndecor:(layered|small_|cut|polished|dolomite|gabbro|weathered|blackstone|basalt|netherrack|amethyst|packed|stone)/
+        /dndecor:(layered|small_|cut|polished|dolomite|gabbro|weathered|blackstone|basalt|netherrack|amethyst|packed|stone)/,
+        /displaydelight/,
+        'happyghastmod:pwgoods_harness',
+        'happyghastmod:pwgood_harness'
     ])
 });
 RecipeViewerEvents.addEntries('item', e => {
@@ -108,6 +111,8 @@ RecipeViewerEvents.addEntries('item', e => {
     e.add('dndecor:netherrack_millstone');
     e.add('dndecor:stone_crushing_wheel');
     e.add('dndecor:stone_millstone');
+    e.add('displaydelight:food_plate');
+    e.add('displaydelight:small_food_plate');
 })
 RecipeViewerEvents.removeEntries('fluid', (e) => {
     e.remove('create_d2d:sap',)

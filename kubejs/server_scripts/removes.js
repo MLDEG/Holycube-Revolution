@@ -120,6 +120,9 @@ ServerEvents.recipes(e => {
         'dndecor:splashing/weathered_limestone',
         /dndecor:(dolomite|gabbro|weathered_limestone|blackstone|basalt|netherrack|amethyst|packed_mud|stone|polished|layered|cut|small)/,
         /dndecor:crafting\/.+_(crushing_wheel|millstone)/,
+        'happyghastmod:pwgood_harness',
+        'happyghastmod:pwgoods_harness',
+        'happyghastmod:moddy_harness'
     ]
     removeId.forEach(C => { r(C) })
 })

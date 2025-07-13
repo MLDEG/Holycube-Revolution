@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "harness",
+    "key": {
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "B": {
+            "item": "create:asurine"
+        }
+    },
+    "pattern": [
+        "LLL",
+        "GBG"
+    ],
+    "result": {
+        "id": "happyghastmod:blue_harness",
+        "components": {
+            "minecraft:custom_data": {
+                "CustomHarnessId": "01e88cc5-2f06-4414-9e15-190eaa583d95",
+                "HasCustomSaddleTexture": "1b"
+            },
+            "minecraft:custom_name": "\"Asurine Harness\""
+        }
+    }
+}

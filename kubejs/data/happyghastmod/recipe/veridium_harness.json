@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "harness",
+    "key": {
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "B": {
+            "item": "create:veridium"
+        }
+    },
+    "pattern": [
+        "LLL",
+        "GBG"
+    ],
+    "result": {
+        "id": "happyghastmod:green_harness",
+        "components": {
+            "minecraft:custom_data": {
+                "CustomHarnessId": "4918b10e-e96b-4e0a-9f36-8e46eaad0cd0",
+                "HasCustomSaddleTexture": "1b"
+            },
+            "minecraft:custom_name": "\"Veridium Harness\""
+        }
+    }
+}

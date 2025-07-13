@@ -5782,7 +5782,68 @@
       "frequency": 0.03,
       "movement": "TRAILING_HEAD" 
     
+    }},
+
+
+    "oni_mask": { 
+    "name": "oni_mask",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": true,
+      "decimal color": 14157858 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "doges_hat": { 
+    "name": "doges_hat",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": false,
+      "decimal color": 14157858 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
+    }},
+
+
+    "venitien_mask": { 
+    "name": "venitien_mask",
+    "rarity": "EPIC",
+    "weight": 5,
+    "variants": 0,
+    "season": "NONE",
+    "Dye Settings": {
+      "enabled": false,
+      "decimal color": 14157858 
+    },
+    "Particle Settings": {
+      "enabled": false,
+      "name": "minecraft:small_flame",
+      "frequency": 0.03,
+      "movement": "TRAILING_HEAD" 
+    
     }}
+
+
+
+
 
 
 

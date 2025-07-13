@@ -384,4 +384,20 @@ ServerEvents.recipes(e => {
     e.shapeless('dndecor:diorite_crushing_wheel', ['minecraft:diorite', '#c:create/crushing_wheels'])
     e.shapeless('dndecor:granite_crushing_wheel', ['minecraft:granite', '#c:create/crushing_wheels'])
 
+    //Packed Snow
+    e.shapeless('2x bountifulblocks:snow_bricks', '4x bountifulblocks:packed_snow')
+    function slabStairsWall(input, output) {
+        //slab
+        e.stonecutting('2x ' + output + '_slab', input)
+        e.shaped('6x ' + output + '_slab', ['AAA'], { A: input })
+        //stairs
+        e.stonecutting(output + '_stairs', input)
+        e.shaped('4x ' + output + '_stairs', ['A  ', 'AA ', 'AAA'], { A: input })
+        //Wall
+        e.stonecutting(output + '_wall', input)
+        e.shaped('6x ' + output + '_wall', ['AAA', 'AAA'], { A: input })
+    }
+    slabStairsWall('bountifulblocks:packed_snow', 'bountifulblocks:packed_snow')
+    slabStairsWall('bountifulblocks:snow_bricks', 'bountifulblocks:snow_brick')
+
 })

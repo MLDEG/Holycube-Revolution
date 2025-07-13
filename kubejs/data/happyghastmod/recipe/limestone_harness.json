@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "harness",
+    "key": {
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "B": {
+            "item": "create:limestone"
+        }
+    },
+    "pattern": [
+        "LLL",
+        "GBG"
+    ],
+    "result": {
+        "id": "happyghastmod:light_gray_harness",
+        "components": {
+            "minecraft:custom_data": {
+                "CustomHarnessId": "e476ee73-2ba8-44b9-b09e-8525b3ff15bd",
+                "HasCustomSaddleTexture": "1b"
+            },
+            "minecraft:custom_name": "\"Limestone Harness\""
+        }
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "harness",
+    "key": {
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "B": {
+            "item": "create_d2d:dolomite"
+        }
+    },
+    "pattern": [
+        "LLL",
+        "GBG"
+    ],
+    "result": {
+        "id": "happyghastmod:white_harness",
+        "components": {
+            "minecraft:custom_data": {
+                "CustomHarnessId": "ed0d349b-6c39-47e2-9d0e-4b81cd9d7ebd",
+                "HasCustomSaddleTexture": "1b"
+            },
+            "minecraft:custom_name": "\"Dolomite Harness\""
+        }
+    }
+}

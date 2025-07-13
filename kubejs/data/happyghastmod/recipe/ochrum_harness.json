@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "harness",
+    "key": {
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "B": {
+            "item": "create:ochrum"
+        }
+    },
+    "pattern": [
+        "LLL",
+        "GBG"
+    ],
+    "result": {
+        "id": "happyghastmod:yellow_harness",
+        "components": {
+            "minecraft:custom_data": {
+                "CustomHarnessId": "75e7be4a-19fc-45f6-87e7-87efede86c77",
+                "HasCustomSaddleTexture": "1b"
+            },
+            "minecraft:custom_name": "\"Ochrum Harness\""
+        }
+    }
+}

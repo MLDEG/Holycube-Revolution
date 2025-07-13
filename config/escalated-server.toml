@@ -18,3 +18,5 @@ maxWalkwayWidth = 10
 # Default: 10
 # Range: 1 ~ 256
 maxEscalatorWidth = 10
+#.
+divingBootsPreventWalkwayMotion = false

@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "harness",
+    "key": {
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "B": {
+            "item": "create:scoria"
+        }
+    },
+    "pattern": [
+        "LLL",
+        "GBG"
+    ],
+    "result": {
+        "id": "happyghastmod:brown_harness",
+        "components": {
+            "minecraft:custom_data": {
+                "CustomHarnessId": "c328c829-293c-44bc-aeee-8c06ba955b74",
+                "HasCustomSaddleTexture": "1b"
+            },
+            "minecraft:custom_name": "\"Scoria Harness\""
+        }
+    }
+}

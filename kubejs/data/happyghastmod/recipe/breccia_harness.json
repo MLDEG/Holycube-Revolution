@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "harness",
+    "key": {
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "B": {
+            "item": "create_d2d:breccia"
+        }
+    },
+    "pattern": [
+        "LLL",
+        "GBG"
+    ],
+    "result": {
+        "id": "happyghastmod:orange_harness",
+        "components": {
+            "minecraft:custom_data": {
+                "CustomHarnessId": "82b70c0d-67fd-416f-a20b-f246e88fb958",
+                "HasCustomSaddleTexture": "1b"
+            },
+            "minecraft:custom_name": "\"Breccia Harness\""
+        }
+    }
+}

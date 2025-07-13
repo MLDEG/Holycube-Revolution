@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "harness",
+    "key": {
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "B": {
+            "item": "create_d2d:gabbro"
+        }
+    },
+    "pattern": [
+        "LLL",
+        "GBG"
+    ],
+    "result": {
+        "id": "happyghastmod:brown_harness",
+        "components": {
+            "minecraft:custom_data": {
+                "CustomHarnessId": "dd3a1a75-f555-433c-9b26-5e3068df17bf",
+                "HasCustomSaddleTexture": "1b"
+            },
+            "minecraft:custom_name": "\"Gabbro Harness\""
+        }
+    }
+}

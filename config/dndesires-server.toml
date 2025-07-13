@@ -1,0 +1,69 @@
+#.
+#Configs for the World
+[server]
+	#.
+	#Chance for and Ore Stone to spawn when on top of Bedrock while Milkshake Stone Generating
+	# Default: 25
+	# Range: 1 ~ 100
+	chanceForOreStone = 25
+	#.
+	#Chance for and Ore Stone to spawn when on top of Artificial Bedrock while Milkshake Stone Generating
+	# Default: 5
+	# Range: 0 ~ 100
+	chanceForArtificialOreStone = 5
+
+#.
+#Parameters and abilities of Create: Desires 2 Dream's kinetic mechanisms
+[kinetics]
+
+	#.
+	#.
+	#Industrial Fan
+	[kinetics.industrialFan]
+		#.
+		#Maximum distance in blocks Fans can push entities.
+		# Default: 30
+		# Range: > 5
+		fanPushDistance = 30
+		#.
+		#Maximum distance in blocks from where Fans can pull entities.
+		# Default: 30
+		# Range: > 5
+		fanPullDistance = 30
+		#.
+		#Game ticks between Fans checking for anything blocking their air flow.
+		# Default: 30
+		# Range: > 10
+		fanBlockCheckRate = 30
+		#.
+		#[in Revolutions per Minute]
+		#Rotation speed at which the maximum stats of fans are reached.
+		# Default: 256
+		# Range: > 64
+		fanRotationArgmax = 256
+		#.
+		#Game ticks required for a Fan-based processing recipe to take effect.
+		# Default: 75
+		# Range: > 0
+		fanProcessingTime = 75
+
+	#.
+	#Fine tune the kinetic stats of individual components
+	[kinetics.stressValues]
+
+		#.
+		#.
+		#[in Stress Units]
+		#Configure the individual stress impact of mechanical blocks. Note that this cost is doubled for every speed increase it receives.
+		[kinetics.stressValues.impact]
+			hydraulic_press = 16.0
+			omni_speed_controller = 0.0
+			inverse_gearshift = 0.0
+			industrial_fan = 4.0
+
+		#.
+		#[in Stress Units]
+		#Configure how much stress a source can accommodate for.
+		[kinetics.stressValues.capacity]
+			industrial_fan = 16.0
+			stirling_engine = 1024.0

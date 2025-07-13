@@ -16,6 +16,9 @@
 	# Default: 10
 	# Range: > 1
 	farm_speed = 10
+	#The crops that the farmer will not use
+	#Entries starting with '#' are treated as tags
+	crop_blacklist = ["#easy_villagers:invalid_farmer_crop"]
 
 [iron_farm]
 	#The time in ticks the iron farm takes to spawn a golem

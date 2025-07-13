@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "harness",
+    "key": {
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "B": {
+            "item": "create:crimsite"
+        }
+    },
+    "pattern": [
+        "LLL",
+        "GBG"
+    ],
+    "result": {
+        "id": "happyghastmod:red_harness",
+        "components": {
+            "minecraft:custom_data": {
+                "CustomHarnessId": "7caf681e-6139-4841-88fa-f8b07a6f8636",
+                "HasCustomSaddleTexture": "1b"
+            },
+            "minecraft:custom_name": "\"Crimsite Harness\""
+        }
+    }
+}

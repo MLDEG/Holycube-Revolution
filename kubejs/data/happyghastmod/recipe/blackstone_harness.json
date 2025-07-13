@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "group": "harness",
+    "key": {
+        "G": {
+            "item": "minecraft:glass"
+        },
+        "L": {
+            "item": "minecraft:leather"
+        },
+        "B": {
+            "item": "minecraft:blackstone"
+        }
+    },
+    "pattern": [
+        "LLL",
+        "GBG"
+    ],
+    "result": {
+        "id": "happyghastmod:black_harness",
+        "components": {
+            "minecraft:custom_data": {
+                "CustomHarnessId": "90c8528f-d7c8-471c-8cf8-eec8769dc1d6",
+                "HasCustomSaddleTexture": "1b"
+            },
+            "minecraft:custom_name": "\"Blackstone Harness\""
+        }
+    }
+}

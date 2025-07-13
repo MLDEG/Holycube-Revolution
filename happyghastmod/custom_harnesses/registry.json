@@ -1,6 +1,94 @@
 {
+  "e476ee73-2ba8-44b9-b09e-8525b3ff15bd": {
+    "name": "limestone",
+    "creatorUuid": "dc601ba5-3143-49b1-8db2-aaa7343fe14d",
+    "creatorName": "MrMLDEG",
+    "hasSaddleTexture": true,
+    "hasGlassesTexture": false,
+    "hasAccessoryTexture": false
+  },
+  "c328c829-293c-44bc-aeee-8c06ba955b74": {
+    "name": "scoria",
+    "creatorUuid": "dc601ba5-3143-49b1-8db2-aaa7343fe14d",
+    "creatorName": "MrMLDEG",
+    "hasSaddleTexture": true,
+    "hasGlassesTexture": false,
+    "hasAccessoryTexture": false
+  },
   "d8328d1b-d3b6-4e5a-8553-76e194cf6e41": {
     "name": "MLDEG Harness",
+    "creatorUuid": "dc601ba5-3143-49b1-8db2-aaa7343fe14d",
+    "creatorName": "MrMLDEG",
+    "hasSaddleTexture": true,
+    "hasGlassesTexture": false,
+    "hasAccessoryTexture": false
+  },
+  "ed0d349b-6c39-47e2-9d0e-4b81cd9d7ebd": {
+    "name": "dolomite",
+    "creatorUuid": "dc601ba5-3143-49b1-8db2-aaa7343fe14d",
+    "creatorName": "MrMLDEG",
+    "hasSaddleTexture": true,
+    "hasGlassesTexture": false,
+    "hasAccessoryTexture": false
+  },
+  "01e88cc5-2f06-4414-9e15-190eaa583d95": {
+    "name": "asurine",
+    "creatorUuid": "dc601ba5-3143-49b1-8db2-aaa7343fe14d",
+    "creatorName": "MrMLDEG",
+    "hasSaddleTexture": true,
+    "hasGlassesTexture": false,
+    "hasAccessoryTexture": false
+  },
+  "90c8528f-d7c8-471c-8cf8-eec8769dc1d6": {
+    "name": "black",
+    "creatorUuid": "dc601ba5-3143-49b1-8db2-aaa7343fe14d",
+    "creatorName": "MrMLDEG",
+    "hasSaddleTexture": true,
+    "hasGlassesTexture": false,
+    "hasAccessoryTexture": false
+  },
+  "82b70c0d-67fd-416f-a20b-f246e88fb958": {
+    "name": "breccia",
+    "creatorUuid": "dc601ba5-3143-49b1-8db2-aaa7343fe14d",
+    "creatorName": "MrMLDEG",
+    "hasSaddleTexture": true,
+    "hasGlassesTexture": false,
+    "hasAccessoryTexture": false
+  },
+  "6bc3a80a-a0a3-42c0-9cc7-249cbbe2dcb7": {
+    "name": "scorchia",
+    "creatorUuid": "dc601ba5-3143-49b1-8db2-aaa7343fe14d",
+    "creatorName": "MrMLDEG",
+    "hasSaddleTexture": true,
+    "hasGlassesTexture": false,
+    "hasAccessoryTexture": false
+  },
+  "7caf681e-6139-4841-88fa-f8b07a6f8636": {
+    "name": "crimsite",
+    "creatorUuid": "dc601ba5-3143-49b1-8db2-aaa7343fe14d",
+    "creatorName": "MrMLDEG",
+    "hasSaddleTexture": true,
+    "hasGlassesTexture": false,
+    "hasAccessoryTexture": false
+  },
+  "dd3a1a75-f555-433c-9b26-5e3068df17bf": {
+    "name": "gabbro",
+    "creatorUuid": "dc601ba5-3143-49b1-8db2-aaa7343fe14d",
+    "creatorName": "MrMLDEG",
+    "hasSaddleTexture": true,
+    "hasGlassesTexture": false,
+    "hasAccessoryTexture": false
+  },
+  "4918b10e-e96b-4e0a-9f36-8e46eaad0cd0": {
+    "name": "veridium",
+    "creatorUuid": "dc601ba5-3143-49b1-8db2-aaa7343fe14d",
+    "creatorName": "MrMLDEG",
+    "hasSaddleTexture": true,
+    "hasGlassesTexture": false,
+    "hasAccessoryTexture": false
+  },
+  "75e7be4a-19fc-45f6-87e7-87efede86c77": {
+    "name": "occhrum",
     "creatorUuid": "dc601ba5-3143-49b1-8db2-aaa7343fe14d",
     "creatorName": "MrMLDEG",
     "hasSaddleTexture": true,

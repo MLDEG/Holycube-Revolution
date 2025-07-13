@@ -122,7 +122,8 @@ ServerEvents.recipes(e => {
         /dndecor:crafting\/.+_(crushing_wheel|millstone)/,
         'happyghastmod:pwgood_harness',
         'happyghastmod:pwgoods_harness',
-        'happyghastmod:moddy_harness'
+        'happyghastmod:moddy_harness',
+        'create_extra_casing:crafting/rgb_brass_casing'
     ]
     removeId.forEach(C => { r(C) })
 })

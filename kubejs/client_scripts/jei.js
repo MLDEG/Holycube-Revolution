@@ -87,7 +87,8 @@ RecipeViewerEvents.removeEntries('item', (e) => {
         /dndecor:(layered|small_|cut|polished|dolomite|gabbro|weathered|blackstone|basalt|netherrack|amethyst|packed|stone)/,
         /displaydelight/,
         'happyghastmod:pwgoods_harness',
-        'happyghastmod:pwgood_harness'
+        'happyghastmod:pwgood_harness',
+        'create_extra_casing:rgb_brass_casing'
     ])
 });
 RecipeViewerEvents.addEntries('item', e => {

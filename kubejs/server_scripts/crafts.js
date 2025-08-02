@@ -3,6 +3,9 @@ ServerEvents.recipes(e => {
     //Plolished Rose Quartz Block
     e.shapeless('kubejs:polished_rose_quartz_block', '9x create:polished_rose_quartz')
     e.shapeless('9x create:polished_rose_quartz', 'kubejs:polished_rose_quartz_block')
+    //Dripleaf
+    e.shapeless('minecraft:big_dripleaf', 'minecraft:small_dripleaf')
+    e.shapeless('minecraft:small_dripleaf', 'minecraft:big_dripleaf')
     //Coral Crafts
     function corals(item) {
         e.shapeless('4x minecraft:' + item + '_coral', 'minecraft:' + item + '_coral_block')

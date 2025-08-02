@@ -516,6 +516,8 @@
 		# Default: 64
 		# Range: 0 ~ 500
 		bound_distance = 64
+		#Allows flute to be unbound. Unbound flutes will search for pets in a radius and teleport them to the player
+		unbound = false
 
 	[tools.bomb]
 		enabled = true

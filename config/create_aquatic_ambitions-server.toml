@@ -1,0 +1,30 @@
+#.
+#Parameters and abilities of the Conduit Cage
+[conduit_cage]
+	#.
+	#.
+	#Maximum range of the conduit cage diameter (4-96).
+	# Default: 32
+	# Range: 4 ~ 96
+	conduitCageRange = 32
+	#.
+	#How many seconds of awakening are added per bucket of water. Values below 20 will require high pump RPMs
+	# Default: 20
+	# Range: 5 ~ 600
+	waterConversionRate = 20
+	#.
+	#How many seconds of awakening are added per bucket of potion
+	# Default: 300
+	# Range: 5 ~ 3600
+	potionConversionRate = 300
+	#.
+	#How many seconds of awakening are added per bucket of fluid. Used for anything but water and potions
+	# Default: 60
+	# Range: 5 ~ 1200
+	fluidConversionRate = 60
+	#.
+	#Max amount of seconds a conduit can accumulate before it starts rejecting fluids. Lower this if want conduit cages to need constant fluid supply
+	#[@cui:RequiresReload:server]
+	# Default: 7200
+	# Range: 1 ~ 12000
+	awakenedTimeLimit = 7200
